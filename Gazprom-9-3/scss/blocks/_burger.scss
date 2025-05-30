@@ -1,0 +1,66 @@
+.burger {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 100;
+
+  // Состояние активного бургера
+
+  .header--open & {
+    &__line {
+      background-color: transparent;
+
+      &--top {
+        background-color: $color-white;
+        top: 0;
+        transform: translate(-50%, 0) rotate(45deg);
+        transition: background-color $transform-300, top $transform-300, transform $transform-300 0.3s;
+      }
+
+      &--bottom {
+        background-color: $color-white;
+        top: 0;
+        transform: translate(-50%, 0) rotate(-45deg);
+        transition: background-color $transform-300, top $transform-300, transform $transform-300 0.3s;
+      }
+    }
+  }
+
+  &__line {
+    background-color: $color-black;
+    border-radius: 10px;
+    height: 4px;
+    position: relative;
+    width: 32px;
+    transition: background-color 0s 0.3s;
+
+    &--bottom,
+    &--top {
+      background-color: $color-black;
+      border-radius: 10px;
+      content: "";
+      height: 4px;
+      left: 50%;
+      position: absolute;
+      top: -5px;
+      transform: translate(-50%, 0);
+      width: 32px;
+    }
+
+    &--top {
+      transition: background-color $transform-300, top $transform-300 0.3s, transform $transform-300;
+    }
+
+    &--bottom {
+      transition: background-color $transform-300, top $transform-300 0.3s, transform $transform-300;
+      top: 8px;
+    }
+  }
+}
+
+

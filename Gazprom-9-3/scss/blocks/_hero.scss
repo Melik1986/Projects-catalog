@@ -1,0 +1,111 @@
+.hero {
+  overflow: hidden;
+  margin: 0 0 40px 0;
+
+  &__wrapper {
+    padding: 28px 0 40px;
+    min-height: calc(100vh - 92px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: $color-blue;
+    margin: 0 0 60px 0;
+  }
+
+  &__title-bottom {
+    padding: 0 0 0 91px;
+  }
+
+  &__intro {
+    margin: 0 0 23px 0;
+    position: relative;
+    padding: 0 0 243px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &__circle-text {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: -59px;
+    animation: rotate 20s linear infinite;
+    transform-origin: center;
+    will-change: transform;
+  }
+
+  &__mouse-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: auto auto 0;
+    cursor: pointer;
+
+    &:focus-visible {
+      outline: 2px solid $color-blue;
+      outline-offset: 4px;
+    }
+  }
+
+  &__icon-mouse {
+    path:last-of-type {
+      animation: mouseDot 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      transform-origin: center;
+      will-change: transform, opacity;
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes mouseDot {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  60% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  
+  61% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  
+  62% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

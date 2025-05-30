@@ -1,0 +1,29 @@
+// Шапка сайта
+.header {
+  padding: 40px 0;
+  background-color: $color-white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  opacity: 1;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__logo {
+    display: flex;
+    margin: 0 20px 0 0;
+    color: $color-black;
+
+    svg {
+      width: 238px;
+      height: 12px;
+    }
+  }
+}
