@@ -1,3 +1,20 @@
+# Algora
+
+Краткое описание:
+
+Современный сайт на Next.js для малого и среднего бизнеса. Проект реализован с акцентом на адаптивность, анимации и удобство использования. В работе применялись современные подходы к разработке и оптимизации интерфейса.
+
+**Используемые инструменты и технологии:**
+- Next.js
+- React
+- GSAP и @gsap/react (анимации)
+- @studio-freight/react-lenis (плавный скролл)
+- Lottie-web (SVG-анимации)
+- React-icons
+- Split-type (текстовые эффекты)
+
+Проект легко масштабируется и поддерживает современные требования к дизайну и производительности.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

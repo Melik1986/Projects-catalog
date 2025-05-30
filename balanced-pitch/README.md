@@ -1,6 +1,17 @@
-# React + Vite
+# Balanced Pitch
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Balanced Pitch — современный одностраничный сайт для малого и среднего бизнеса. Проект реализован с акцентом на простоту, функциональность и адаптивность, чтобы сайт отлично выглядел и работал на всех устройствах.
+
+**Используемые технологии:**
+- React
+- Vite
+- React Router DOM
+- GSAP
+- Framer Motion
+- Lenis и @studio-freight/react-lenis
+- ESLint
+
+Сайт легко масштабируется и поддерживает плавные анимации для улучшения пользовательского опыта.
 
 Currently, two official plugins are available:
 
