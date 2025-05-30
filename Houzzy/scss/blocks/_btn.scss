@@ -1,0 +1,89 @@
+.btn {
+  align-items: center;
+  width: 260px;
+  height: 44px;
+  border: 1px solid #D7CFCB;
+  color: $color-bokara-grey;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: $color-hint-of-red;
+  cursor: pointer;
+
+  @include vp-1023 {
+    width: 170px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: 36px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    background-color: $color-green-white;
+  }
+
+  &--like {
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+
+    @include vp-767 {
+      display: none;
+    }
+    &:hover,
+    &:focus-visible {
+      background-color: transparent;
+      outline: none;
+      color: $color-green-white;
+    }
+  }
+
+  &--black {
+    background-color: #141211;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    margin-left: auto;
+    width: 240px;
+    height: 60px;
+
+    @include vp-1023 {
+      margin: 0;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      height: 52px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      border: 1px solid #141211;
+      background-color: $color-green-white;
+      color: $color-bokara-grey;
+    }
+  }
+
+  &--viewed {
+    width: 170px;
+    height: 44px;
+
+    @include vp-1023 {
+      width: 140px;
+      height: 40px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      height: 36px;
+    }
+  }
+}

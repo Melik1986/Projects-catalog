@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: $ff-mulish;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  color: $color-bokara-grey;
+  background-color: $color-hint-of-red;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  color: $color-bokara-grey;
+  text-decoration: none;
+}
