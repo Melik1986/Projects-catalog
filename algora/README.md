@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-  <img src="public/images/home/hero.jpeg" alt="Algora — Hero" />
+  <img src="public/algora1.png" alt="Algora — Hero" />
   <br />
   <br />
 
@@ -53,19 +53,19 @@ Algora is a modern website built with Next.js that explores the intersection of 
 ## Screenshots
 
 <p align="center">
-  <img src="public/images/home/hero.jpeg" alt="Hero — Fusion of Art and Algorithms" />
+  <img src="public/algora1.png" alt="Hero — Fusion of Art and Algorithms" />
   <br />
   <em>Hero section with scanline aesthetic</em>
 </p>
 
 <p align="center">
-  <img src="public/images/home/case-study-1.jpeg" alt="Case Study 1" />
+  <img src="public/algora2.png" alt="Case Study — Portrait" />
   <br />
   <em>Editorial layout with image‑led storytelling</em>
 </p>
 
 <p align="center">
-  <img src="public/images/home/case-study-2.jpeg" alt="Case Study 2" />
+  <img src="public/algora3.png" alt="Case Study — Robot at Piano" />
   <br />
   <em>Two‑column section and subtle motion cues</em>
 </p>
@@ -109,11 +109,9 @@ npm start
 ```
 algora/
 ├─ public/
-│  └─ images/
-│     └─ home/
-│        ├─ hero.jpeg
-│        ├─ case-study-1.jpeg
-│        └─ case-study-2.jpeg
+│  ├─ algora1.png
+│  ├─ algora2.png
+│  └─ algora3.png
 ├─ src/
 │  ├─ app/              # App Router pages and layouts
 │  └─ components/       # UI components and sections
