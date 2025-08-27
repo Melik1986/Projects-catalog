@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-  <img src="public/react-project-vk1.png" alt="VK Project — Hero" />
+  <img src="public/vk1.png" alt="VK Project — Hero" />
   <br />
   <br />
 
@@ -58,13 +58,13 @@ This project is a modern React + TypeScript application prepared for production:
 ## Screenshots
 
 <p align="center">
-  <img src="public/react-project-vk1.png" alt="Hero — VK Project" />
+  <img src="public/vk2.png" alt="Hero — VK Project" />
   <br />
   <em>App shell and navigation</em>
 </p>
 
 <p align="center">
-  <img src="public/react-project-vk2.png" alt="Feature — VK Project" />
+  <img src="public/vk3.png" alt="Feature — VK Project" />
   <br />
   <em>Feature screen</em>
 </p>
@@ -94,8 +94,8 @@ Open `http://localhost:5173` in your browser.
 ```
 react_project-VK/react_project-1/ВК-Маруся/
 ├─ public/
-│  ├─ react-project-vk1.png  # add later
-│  └─ react-project-vk2.png  # add later
+│  ├─ 
+│  └─ 
 ├─ src/
 │  ├─ app/ core modules
 │  ├─ components/
@@ -107,7 +107,5 @@ react_project-VK/react_project-1/ВК-Маруся/
 └─ tsconfig.json
 ```
 
----
 
-Drop screenshots into `public/` with the filenames above to enable previews in this README.
 
