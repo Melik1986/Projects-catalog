@@ -47,12 +47,6 @@ Houzzy is a static, responsive e‑commerce layout focused on clarity and usabil
 ## Screenshots
 
 <p align="center">
-  <img src="images/Desktop - 1920 (1).png" alt="Desktop 1920 — Catalog" />
-  <br />
-  <em>Desktop layout (1920px)</em>
-</p>
-
-<p align="center">
   <img src="images/Tablet - 768.png" alt="Tablet 768 — Catalog" />
   <br />
   <em>Tablet layout (768px)</em>
@@ -82,7 +76,3 @@ Houzzy/
 │   └── viewed/
 └── catalog.html
 ```
-
-## Getting Started
-
-This is a static project — no build is required. Simply open `catalog.html` in your browser.
