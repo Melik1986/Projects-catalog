@@ -1,25 +1,64 @@
-# Houzzy - Интернет-магазин мебели
+<div align="center">
+  <br />
+  <img src="images/Desktop - 1920 (1).png" alt="Houzzy — Catalog Desktop" />
+  <br />
+  <br />
 
-## О проекте
-Houzzy - это современный интернет-магазин мебели с адаптивным дизайном. Проект разработан с фокусом на удобство пользователя и современные тенденции веб-разработки.
+  <div>
+    <img src="https://img.shields.io/badge/HTML5-–-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+    <img src="https://img.shields.io/badge/SCSS-–-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="SCSS" />
+    <img src="https://img.shields.io/badge/BEM-–-000000?style=for-the-badge" alt="BEM" />
+    <img src="https://img.shields.io/badge/Responsive-–-0A0A0A?style=for-the-badge" alt="Responsive" />
+  </div>
 
-## Технологии
+  <h3 align="center">Houzzy — Modern Furniture Storefront</h3>
+  <p align="center">Responsive catalog page with filters, product cards, and a “recently viewed” section.</p>
+</div>
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Tech Stack](#tech-stack)
+4. [Screenshots](#screenshots)
+5. [Project Structure](#project-structure)
+6. [Getting Started](#getting-started)
+
+## Introduction
+
+Houzzy is a static, responsive e‑commerce layout focused on clarity and usability. It demonstrates product catalog UI patterns: filters, rich product cards, breadcrumbs, custom checkboxes/inputs, and a “recently viewed” carousel.
+
+## Features
+
+- Mobile‑first responsive design (360 / 768 / 1920)
+- Product catalog and filter controls
+- Detailed product cards and CTA buttons
+- Recently viewed items section
+- Breadcrumbs for navigation
+- Custom form elements and checkboxes
+- Optimized images (retina @2x where needed)
+
+## Tech Stack
+
 - HTML5
-- CSS3/SCSS
-- Адаптивная верстка (Mobile First)
-- Методология БЭМ
-- Шрифты Mulish (regular, medium, bold)
+- CSS/SCSS (BEM methodology)
+- Mulish font family (regular, medium, bold)
 
-## Особенности
-- Полностью адаптивный дизайн для мобильных устройств (360px), планшетов (768px) и десктопов (1920px)
-- Каталог товаров с фильтрацией
-- Карточки товаров с детальной информацией
-- Секция просмотренных товаров
-- Хлебные крошки для навигации
-- Кастомные формы и чекбоксы
-- Оптимизированные изображения (@2x для retina дисплеев)
+## Screenshots
 
-## Структура проекта
+<p align="center">
+  <img src="images/Desktop - 1920 (1).png" alt="Desktop 1920 — Catalog" />
+  <br />
+  <em>Desktop layout (1920px)</em>
+</p>
+
+<p align="center">
+  <img src="images/Tablet - 768.png" alt="Tablet 768 — Catalog" />
+  <br />
+  <em>Tablet layout (768px)</em>
+</p>
+
+## Project Structure
 ```
 Houzzy/
 ├── css/
@@ -36,7 +75,7 @@ Houzzy/
 │   │   └── ...
 │   └── style.scss
 ├── fonts/
-│   └── mulish-[weight].[format]
+│   └── Mulish (woff/woff2)
 ├── images/
 │   ├── catalog/
 │   ├── sprite/
@@ -44,8 +83,6 @@ Houzzy/
 └── catalog.html
 ```
 
-## Запуск проекта
-Проект не требует установки зависимостей или сборки. Достаточно открыть `catalog.html` в браузере.
+## Getting Started
 
-## Автор
-Проект разработан в рамках обучения на курсе веб-разработки.
+This is a static project — no build is required. Simply open `catalog.html` in your browser.
