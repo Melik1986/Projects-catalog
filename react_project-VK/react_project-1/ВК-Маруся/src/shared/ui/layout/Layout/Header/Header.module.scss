@@ -1,0 +1,284 @@
+@use '@/assets/styles/_container.scss';
+@use '@/assets/styles/variables' as *;
+@use '@/assets/styles/mixins' as *;
+
+.header {
+  padding: 20px 0;
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+  background: transparent;
+  border: none;
+  margin-bottom: 64px;
+
+  @include vp-tablet {
+    padding: 28px 0;
+    margin-bottom: 28px;
+  }
+
+  @include vp-mobile {
+    margin-bottom: 40px;
+    padding: 24px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 74px;
+    height: 48px;
+    width: 100%;
+
+    @include vp-desktop {
+      gap: 40px;
+    }
+
+    @include vp-tablet {
+      gap: 22px;
+    }
+  }
+
+  &__logo {
+    width: 143.33px;
+    height: 32px;
+    flex-shrink: 0;
+    outline: none;
+    transition: $transition-fast;
+    opacity: 0;
+    animation: slideInFade 0.8s ease-out forwards;
+    animation-delay: 0.2s;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex: 1;
+    opacity: 0;
+    animation: slideDownFade 0.8s ease-out forwards;
+    animation-delay: 1s;
+
+    @include vp-tablet {
+      gap: 22px;
+      justify-content: flex-end;
+    }
+  }
+
+  &__searchInput {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @include vp-tablet {
+      position: relative;
+      width: max-content;
+
+      [data-mobile-search] {
+        display: none;
+        pointer-events: none;
+      }
+    }
+
+    &--open {
+      @include vp-tablet {
+        flex: 1;
+
+        [data-mobile-search] {
+          display: block;
+          width: 100%;
+          pointer-events: auto;
+        }
+      }
+    }
+  }
+
+  &__navlink {
+    font: $font-play-body-large;
+    color: $color-text-primary;
+    border-bottom: 1.5px solid transparent;
+
+    @media (prefers-color-scheme: light) {
+      color: $color-black;
+    }
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      border-bottom: $border-bottom;
+    }
+
+    // Скрываем ссылку "Главная" на мобильных
+    &--home {
+      @include vp-tablet {
+        display: none;
+      }
+    }
+
+    // Скрываем текст "Жанры" на мобильных
+    &--genres {
+      @include vp-tablet {
+        font-size: 0;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  // Стили для иконок
+  &__genresIcon {
+    display: none;
+
+    @include vp-tablet {
+      display: block;
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+  }
+
+  &__searchIcon {
+    display: none;
+
+    @include vp-tablet {
+      display: block;
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+      cursor: pointer;
+      transition: $transition-fast;
+
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+
+  &__searchInput--open &__searchIcon {
+    @include vp-tablet {
+      display: none;
+    }
+  }
+
+  // Стили для wrapper при открытом поиске
+  &__wrapper--search-open {
+    @include vp-tablet {
+      gap: 12px;
+
+      .header__logo {
+        display: none;
+      }
+
+      .header__navigation {
+        flex: 1;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__userIcon {
+    display: none;
+
+    @include vp-tablet {
+      display: block;
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+  }
+
+  &__menu {
+    font: $font-play-body-large;
+    color: $color-text-primary;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1.5px solid transparent;
+    text-decoration: none;
+    opacity: 0;
+    animation: slideInFadeRight 0.8s ease-out forwards;
+    animation-delay: 0.2s;
+
+    @media (prefers-color-scheme: light) {
+      color: $color-black;
+    }
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      border-bottom: $border-bottom;
+    }
+  }
+
+  &__menu--button {
+    padding: 0 6px 0 0;
+  }
+
+  &__userName {
+    margin-left: -20px;
+  }
+
+  // Стили для кнопки входа и имени пользователя на мобильных
+  &__menu--button,
+  &__userName {
+    @include vp-tablet {
+      font-size: 0;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  // Активные состояния для навигационных ссылок
+  &__menuItem--active {
+    border-bottom: $border-bottom;
+  }
+
+  &__menu--active {
+    border-bottom: $border-bottom;
+  }
+}
+
+/* --- Ключевые кадры анимаций --- */
+
+/* Анимация для логотипа и кнопки: появление со смещением и изменением прозрачности */
+@keyframes slideInFade {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px); /* Смещение влево */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Анимация для кнопки: появление справа */
+@keyframes slideInFadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px); /* Смещение вправо */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Анимация для меню: опускание сверху */
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%); /* Находится полностью за пределами видимой области */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

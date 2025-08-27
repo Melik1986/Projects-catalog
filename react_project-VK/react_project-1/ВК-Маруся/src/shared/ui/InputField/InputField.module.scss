@@ -1,0 +1,102 @@
+@use '@/assets/styles/variables' as *;
+@use '@/assets/styles/mixins' as *;
+
+.input-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  color: $color-text-placeholder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+}
+
+.input {
+  width: 100%;
+  padding: 16px;
+  padding-left: 44px;
+  padding-right: 44px;
+  border: 1px solid $border-color-placeholder;
+  border-radius: 12px;
+  font: $font-play-body-medium;
+  color: $color-text-black;
+  background-color: $color-white;
+
+  &::placeholder {
+    color: $color-text-placeholder;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-accent;
+  }
+
+  &--error {
+    border-color: $border-color-red;
+  }
+}
+
+.eye-button {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: $color-text-placeholder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    color: $color-accent;
+  }
+
+  &:active {
+    color: $color-accent;
+  }
+}
+
+.eye-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.error-text {
+  color: $border-color-red;
+  padding-left: 2px;
+  font-size: 14px;
+  min-height: 20px;
+  text-align: left;
+}

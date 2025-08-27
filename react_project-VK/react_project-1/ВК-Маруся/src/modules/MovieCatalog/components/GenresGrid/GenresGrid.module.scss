@@ -1,0 +1,41 @@
+@use '@/assets/styles/variables' as *;
+@use '@/assets/styles/mixins' as *;
+
+.genres__grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 64px 40px;
+  padding-top: 64px;
+  perspective: 1000px;
+
+  @include vp-tablet {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding-top: 40px;
+  }
+
+  @include vp-mobile {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+
+  @include vp-375 {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  &__title {
+    font: $font-play-h1;
+    color: $color-white;
+    margin: 0;
+
+    @media (prefers-color-scheme: light) {
+      color: $color-text-black-solid;
+    }
+
+    @include vp-tablet {
+      font: $font-play-h4;
+    }
+  }
+}

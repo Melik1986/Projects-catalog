@@ -1,0 +1,180 @@
+@use '@/assets/styles/variables' as *;
+@use '@/assets/styles/mixins' as *;
+
+.movie-card {
+  width: 224px;
+  height: 336px;
+  position: relative;
+  background: $color-bg-secondary;
+  border-radius: 16px;
+  border: $border-card;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.15);
+  // Поддержка CSS анимаций появления
+  will-change: opacity, transform;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-4px);
+    box-shadow: $box-shadow-card;
+
+    @media (prefers-color-scheme: light) {
+      box-shadow: $shadow-dark-neon;
+    }
+  }
+
+  @include vp-tablet {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.15);
+
+    &:hover,
+    &:focus-visible {
+      box-shadow: $box-shadow-card-mobile;
+    }
+  }
+
+  &__image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__poster {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+
+    &--loaded {
+      opacity: 1;
+    }
+  }
+
+  &__placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, $color-bg-secondary 0%, $color-bg-tertiary 100%);
+    z-index: 1;
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+
+  &__rank {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 36px;
+    height: 36px;
+    background: $color-white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    z-index: 3;
+  }
+
+  &__rank-number {
+    color: $color-text-blue;
+    font: $font-play-h2;
+  }
+
+  &__favorite-btn {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 36px;
+    height: 36px;
+    background: $color-white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(4px);
+    z-index: 3;
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      background: $color-accent;
+
+      .movie-card__heart-icon {
+        color: $icon-color-red;
+      }
+    }
+
+    &--active {
+      .movie-card__heart-icon {
+        color: $icon-color-red;
+      }
+    }
+  }
+
+  &__heart-icon {
+    width: 16px;
+    height: 16px;
+    transition: fill 0.2s ease;
+  }
+
+  &__remove-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color-white;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    border-radius: 50%;
+    transition: background 0.2s;
+    &:hover {
+      background: $color-accent;
+    }
+  }
+
+  &__remove-icon {
+    width: 20px;
+    height: 20px;
+    fill: $color-accent;
+  }
+}
+
+.movie-card--genre {
+  @include vp-tablet {
+    height: 272px;
+  }
+
+  @include vp-mobile {
+    height: 502px;
+    width: 335px;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}

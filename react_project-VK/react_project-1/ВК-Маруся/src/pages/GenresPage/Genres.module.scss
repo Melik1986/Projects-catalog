@@ -1,0 +1,13 @@
+@use '@/assets/styles/variables' as *;
+@use '@/assets/styles/mixins' as *;
+
+.genres {
+  min-height: calc(100vh - 310px);
+  background: transparent;
+  margin-bottom: 64px;
+
+  @include vp-tablet {
+    min-height: calc(100dvh - 240px);
+    margin-bottom: 40px;
+  }
+}

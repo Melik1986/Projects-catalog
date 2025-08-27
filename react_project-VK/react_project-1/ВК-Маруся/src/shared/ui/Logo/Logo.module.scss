@@ -1,0 +1,42 @@
+@use '@/assets/styles/variables' as *;
+@use '@/assets/styles/mixins' as *;
+
+.logo {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  text-decoration: none;
+  color: $color-white;
+
+  &--dark {
+    color: var(--logo-text-color, #{$color-text-black-solid});
+  }
+
+  &__icon {
+    width: 26px;
+    height: 33px;
+
+    @include vp-mobile {
+      width: 14px;
+      height: 18px;
+    }
+  }
+
+  &__text {
+    align-self: center;
+    font: $font-play-h2;
+    transform: translateY(2px);
+    color: var(--logo-text-color, #{$color-text-primary});
+
+    @media (prefers-color-scheme: light) {
+      color: var(--logo-text-color, #{$color-text-black});
+    }
+
+    @include vp-mobile {
+      font: $font-play-body-medium;
+      padding-bottom: 4px;
+    }
+  }
+}

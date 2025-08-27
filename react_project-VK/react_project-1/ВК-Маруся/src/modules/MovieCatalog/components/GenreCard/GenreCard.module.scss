@@ -1,0 +1,89 @@
+@use '@/assets/styles/variables' as *;
+@use '@/assets/styles/mixins' as *;
+
+.genres__card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-decoration: none;
+  background: $color-background-disabled;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  aspect-ratio: 1;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  z-index: 1;
+  transform-style: preserve-3d;
+  transform: translateY(0);
+  min-height: 200px; // Минимальная высота для отображения изображения
+  width: 100%;
+
+  @include vp-mobile {
+    border-radius: 16px;
+    min-height: 150px;
+    box-shadow: $box-shadow-card-mobile;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    background: rgba(10, 11, 11, 0.8);
+    pointer-events: none;
+    z-index: 2;
+    transform: translateY(0);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+
+    &::before {
+      transform: translateY(100%);
+    }
+
+    .genres__card_title {
+      color: $color-accent;
+      transform: scale(1.05);
+    }
+  }
+
+  &:active {
+    transform: translateY(-2px) scale(1.01);
+  }
+
+  .genres__card_title {
+    font: $font-play-h2;
+    color: $color-white;
+    margin: 0;
+    padding: 22px 0 30px 0;
+    transition: all 0.3s ease;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    text-shadow: $text-shadow-card;
+
+    @include vp-tablet {
+      font-size: 22px;
+      padding: 16px 0 20px 0;
+    }
+
+    @include vp-mobile {
+      font-size: 18px;
+      padding: 12px 0 16px 0;
+    }
+  }
+}

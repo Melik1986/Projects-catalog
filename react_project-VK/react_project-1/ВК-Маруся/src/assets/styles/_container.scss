@@ -1,0 +1,29 @@
+@use '_variables' as *;
+@use '_mixins' as *;
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+
+  // Десктоп (до 1440px)
+  @include vp-desktop {
+    padding: 0 60px;
+  }
+
+  // Планшеты (до 1024px)
+  @include vp-tablet {
+    padding: 0 40px;
+  }
+
+  // Мобильные устройства (до 768px)
+  @include vp-mobile {
+    padding: 0 20px;
+  }
+
+  // Малые мобильные устройства (до 375px)
+  @include vp-375 {
+    padding: 0 16px;
+  }
+}

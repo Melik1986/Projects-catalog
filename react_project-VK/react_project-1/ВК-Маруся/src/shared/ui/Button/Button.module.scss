@@ -1,0 +1,129 @@
+@use '@/assets/styles/variables' as *;
+@use '@/assets/styles/mixins' as *;
+
+.button {
+  font: $font-play-h3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-radius: 28px;
+  padding: 16px 32px;
+  cursor: pointer;
+  outline: none;
+  text-wrap: nowrap;
+  position: relative;
+  color: $color-text-primary;
+  transition: color 0.3s;
+  z-index: 1;
+
+  // Автоматическое переключение на светлую тему при системных настройках
+  @media (prefers-color-scheme: light) {
+    @include theme-light;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: $color-text-primary;
+    border-radius: 28px;
+    z-index: -1;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    transition: clip-path 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: $color-accent;
+    outline: none;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.primary {
+  background: $color-bg-default;
+  color: $color-text-primary;
+}
+
+.secondary {
+  background: $color-bg-secondary;
+  color: $color-text-primary;
+}
+
+.white {
+  font: $font-play-h2;
+  color: $color-text-primary;
+  padding: 0;
+}
+
+.blue {
+  position: relative;
+  width: 171px;
+  height: 56px;
+  background: $color-accent;
+  font: $font-play-h3;
+  color: $color-text-primary;
+  padding: 16px 48px;
+}
+
+.blueDisabled {
+  background: $color-accent-focus;
+  color: $color-text-disabled;
+  cursor: not-allowed;
+}
+
+.dark {
+  font: $font-play-h3;
+  background: $color-bg-default;
+  color: $color-text-primary;
+  padding: 16px 48px;
+}
+
+.darkDisabled {
+  background: $color-bg-secondary;
+  color: $color-text-disabled;
+  cursor: not-allowed;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.small {
+  width: 68px;
+  height: 56px;
+  padding: 0;
+  background: $color-bg-default;
+  color: $color-text-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 28px;
+}
+
+.icon__heart,
+.icon__refresh {
+  width: 24px;
+  height: 24px;
+  fill: $color-text-primary;
+  transition: fill 0.3s ease;
+}
+
+.icon__heart_active {
+  fill: $icon-color-red;
+}

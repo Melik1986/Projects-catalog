@@ -1,0 +1,74 @@
+@use '@/assets/styles/_container.scss';
+@use '@/assets/styles/variables' as *;
+@use '@/assets/styles/mixins' as *;
+
+.footer {
+  padding: 40px 0;
+  min-height: 116px; // Фиксированная минимальная высота для предотвращения CLS
+
+  @include vp-tablet {
+    padding: 28px 0;
+    min-height: 92px;
+  }
+
+  @include vp-mobile {
+    padding: 24px 0;
+    min-height: 84px;
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: $border-socials;
+    border-radius: 8px;
+    transition: $transition-default;
+
+    @media (prefers-color-scheme: light) {
+      border: $border-bottom;
+    }
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      border-color: $color-text-primary;
+      background-color: $icon-color-secondary-bg;
+    }
+
+    @include vp-mobile {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    color: $color-disabled;
+    transition: $transition-default;
+
+    @include vp-mobile {
+      width: 10px;
+      height: 10px;
+    }
+
+    @media (prefers-color-scheme: light) {
+      color: $color-text-secondary;
+    }
+  }
+
+  &__link:hover &__icon {
+    color: $icon-color-active;
+  }
+}

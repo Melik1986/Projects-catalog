@@ -1,0 +1,35 @@
+@use '@/assets/styles/variables' as *;
+@use '@/assets/styles/mixins' as *;
+
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font: $font-play-body-small;
+  border-radius: 16px;
+  padding: 5px 8px;
+  color: $color-text-primary;
+  background: $color-disabled;
+  outline: none;
+
+  @include vp-tablet {
+    padding: 4px 12px;
+  }
+
+  &__star {
+    width: 10px;
+    height: 10px;
+    color: $color-text-primary;
+    vertical-align: middle;
+  }
+}
+
+.rating-badge--green {
+  background: $icon-color-green;
+}
+.rating-badge--yellow {
+  background: $icon-color-yellow;
+}
+.rating-badge--gray {
+  background: $icon-color-grey;
+}

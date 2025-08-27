@@ -1,0 +1,51 @@
+@use '@/assets/styles/variables' as *;
+@use '@/assets/styles/mixins' as *;
+
+.user-tabs {
+  display: flex;
+  gap: 64px;
+  margin-bottom: 64px;
+
+  @include vp-tablet {
+    margin-bottom: 40px;
+    gap: 24px;
+  }
+
+  &__button {
+    font: $font-play-body-large;
+    color: $color-white;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    outline: none;
+
+    @media (prefers-color-scheme: light) {
+      color: $color-text-black-solid;
+    }
+
+    &:hover,
+    &:focus-visible {
+      border-bottom-color: $color-accent;
+    }
+
+    &--active {
+      border-bottom-color: $color-accent;
+    }
+
+    @include vp-tablet {
+      font: $font-play-body-large;
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+}

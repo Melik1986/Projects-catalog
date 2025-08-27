@@ -1,0 +1,14 @@
+@use '@/assets/styles/variables' as *;
+@use '@/assets/styles/mixins' as *;
+
+.movie-page {
+  min-height: calc(100vh - 310px);
+  background: transparent;
+  color: $color-text-primary;
+  margin-bottom: 64px;
+
+  @include vp-tablet {
+    min-height: calc(100dvh - 240px);
+    margin-bottom: 40px;
+  }
+}

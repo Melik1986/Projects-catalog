@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ff6b6b" />
+    <meta name="msapplication-TileColor" content="#ff6b6b" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.youtube.com http://www.youtube.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: http:; connect-src 'self' https://cinemaguide.skillbox.cc ws: wss:; frame-src 'self' https://www.youtube.com;"
+    />
+
+    <!-- Favicon и иконки -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Preload критических шрифтов -->
+    <link
+      rel="preload"
+      href="/src/assets/fonts/Play-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/src/assets/fonts/Play-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    
+    <!-- Preload основного бандла JS -->
+    <link rel="modulepreload" href="/src/main.tsx" />
+    
+    <!-- DNS prefetch для внешних ресурсов -->
+    <link rel="dns-prefetch" href="//cinemaguide.skillbox.cc" />
+    <link rel="dns-prefetch" href="//www.youtube.com" />
+    
+    <!-- Preconnect для API -->
+    <link rel="preconnect" href="https://cinemaguide.skillbox.cc" crossorigin />
+
+    <title>ВК Маруся</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Кинопортал ВК Маруся - лучшие фильмы и сериалы" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

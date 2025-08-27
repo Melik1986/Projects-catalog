@@ -1,0 +1,43 @@
+@use '@/assets/styles/variables' as *;
+@use '@/assets/styles/mixins' as *;
+
+.success-message {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__logo {
+    margin-bottom: 40px;
+
+    // Определяем CSS-переменную для переопределения цвета текста логотипа
+    --logo-text-color: #{$color-text-black-solid};
+  }
+
+  &__content {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    font: $font-play-h2;
+    color: $color-text-black-solid;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 16px;
+
+    @include vp-tablet {
+      font: $font-play-h4;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      font: $font-play-body-medium;
+      color: $color-text-placeholder;
+    }
+  }
+
+  &__submit-btn {
+    width: 100%;
+  }
+}

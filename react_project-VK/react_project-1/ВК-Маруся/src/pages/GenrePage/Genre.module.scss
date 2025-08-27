@@ -1,0 +1,98 @@
+@use '@/assets/styles/variables' as *;
+@use '@/assets/styles/mixins' as *;
+
+.genre {
+  position: relative;
+  height: calc(100vh - 152px);
+  margin-bottom: 64px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  @include vp-tablet {
+    height: calc(100vh - 248px);
+    margin-bottom: 28px;
+    overflow: hidden;
+  }
+
+  @include vp-mobile {
+    height: calc(100vh - 248px);
+    margin-bottom: 40px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+  }
+
+  &__content {
+    @include vp-tablet {
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: auto;
+      // Скрываем полосу прокрутки для горизонтального скролла
+      scrollbar-width: none; // Firefox
+      -ms-overflow-style: none; // IE и Edge
+
+      &::-webkit-scrollbar {
+        display: none; // Chrome, Safari, Opera
+      }
+    }
+
+    @include vp-mobile {
+      overflow-x: hidden;
+    }
+  }
+
+  &__title {
+    font: $font-play-h1;
+    color: $color-white;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+    @media (prefers-color-scheme: light) {
+      color: $color-text-black-solid;
+    }
+
+    @include vp-tablet {
+      font: $font-play-h4;
+    }
+  }
+
+  &__back {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-white;
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    flex-shrink: 0;
+
+    @media (prefers-color-scheme: light) {
+      color: $color-text-black-solid;
+    }
+
+    &:hover,
+    &:focus-visible &__back_icon {
+      outline: none;
+      color: $color-accent;
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: scale(1.2);
+    }
+  }
+
+  &__back_icon {
+    width: 16px;
+    height: 16px;
+  }
+}

@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Запрещаем индексацию служебных страниц
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /static/
+
+# Указываем расположение sitemap
+Sitemap: https://vk-marusya.example.com/sitemap.xml
+
+# Время задержки между запросами (в секундах)
+Crawl-delay: 1

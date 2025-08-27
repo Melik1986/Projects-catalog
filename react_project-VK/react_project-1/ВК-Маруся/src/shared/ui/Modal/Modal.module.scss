@@ -1,0 +1,84 @@
+@use '@/assets/styles/variables' as *;
+@use '@/assets/styles/mixins' as *;
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(20, 24, 31, 0.65); // полупрозрачный тёмный фон
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $color-white;
+  border-radius: 24px;
+  padding: 64px 40px;
+  min-width: 420px;
+  min-height: 450px;
+  position: relative;
+  box-shadow: $shadow-white-large;
+
+  @include vp-mobile {
+    border-radius: 16px;
+    padding: 40px 24px;
+    min-width: 338px;
+    min-height: 234px;
+  }
+
+  &--trailer {
+    min-width: unset;
+    min-height: unset;
+    width: auto;
+    height: auto;
+    padding: 0;
+    border-radius: 8px;
+    background: transparent;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @include vp-mobile {
+      border-radius: 16px;
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: 0px;
+    right: -58px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color-white;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 1000;
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      background: $color-accent;
+    }
+
+    @include vp-mobile {
+      width: 32px;
+      height: 32px;
+      top: 0;
+      right: 0;
+    }
+  }
+}

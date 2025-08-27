@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "incremental": true, // Включает инкрементальную компиляцию, собирает только изменённый код
+    "target": "ES2020",
+    "lib": ["DOM", "DOM.Iterable", "ES2020"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true, // Включает все строгие опции проверки типов (рекомендуется)
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true, // Аналогично noUnusedParameters, но для локальных переменных
+    "noUnusedParameters": true, // Не позволяет неиспользуемые параметры в функциях
+    "noUncheckedIndexedAccess": true, // Обеспечивает проверку типов при индексированном доступе на undefined
+    "noImplicitReturns": true, // Сообщает об ошибках для случаев в switch, которые проваливаются без break, return или throw
+    "noFallthroughCasesInSwitch": true, // При включении предотвращает усечение сообщений об ошибках, предоставляя полную информацию
+    "noImplicitOverride": true, // Требует явного использования ключевого слова override при переопределении методов в подклассе
+    "allowUnreachableCode": false, // При значении false выдает ошибки для недостижимого кода
+    "allowUnusedLabels": false, // Аналогично noUnusedParameters, но для локальных переменных
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true, // Включает совместимость с CommonJS модулями, позволяя импорты по умолчанию из модулей без экспорта по умолчанию
+    "moduleDetection": "force", // Разрешает импорт JSON файлов как модулей
+    "resolveJsonModule": true,
+    "isolatedModules": true, // Пропускает проверку типов в файлах деклараций
+    "noEmit": true, // Обеспечивает единообразие регистра в именах файлов, что важно для кросс-платформенной совместимости
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "useDefineForClassFields": true
+  },
+  "include": ["src", "typings.d.ts"],
+  "exclude": ["node_modules", "dist"]
+}
