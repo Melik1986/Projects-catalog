@@ -1,94 +1,126 @@
-# Algora
+<div align="center">
+  <br />
+  <img src="public/images/home/hero.jpeg" alt="Algora — Hero" />
+  <br />
+  <br />
 
-Short description:
+  <div>
+    <img src="https://img.shields.io/badge/Next.js-15-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+    <img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
+    <img src="https://img.shields.io/badge/GSAP-3-88CE02?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP" />
+    <img src="https://img.shields.io/badge/@gsap/react-2-88CE02?style=for-the-badge" alt="@gsap/react" />
+    <img src="https://img.shields.io/badge/Lenis-Smooth_Scroll-111111?style=for-the-badge" alt="Lenis" />
+    <img src="https://img.shields.io/badge/Lottie-web-1DA1F2?style=for-the-badge" alt="Lottie-web" />
+    <img src="https://img.shields.io/badge/Split--Type-Text_Effects-0A0A0A?style=for-the-badge" alt="SplitType" />
+  </div>
 
-A modern website on Next.js for small and medium-sized businesses. The project
-was implemented with an emphasis on adaptability, animation and usability. The
-work applied modern approaches to the development and optimization of the
-interface.
+  <h3 align="center">Algora — The Fusion of Art and Algorithms</h3>
+  <p align="center">A motion‑driven Next.js site with cinematic visuals, smooth scroll, and editorial storytelling.</p>
+</div>
 
-**Tools and technologies used:**
+## Table of Contents
 
-- Next.js
-- React
-- GSAP and @gsap/react (animations)
-- @studio-freight/react-lenis (smooth scrolling)
-- Lottie-web (SVG animations)
--
-    - Reactions
-- Split-type (text effects)
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Tech Stack](#tech-stack)
+4. [Screenshots](#screenshots)
+5. [Getting Started](#getting-started)
+6. [Scripts](#scripts)
+7. [Project Structure](#project-structure)
 
-The project scales easily and supports modern design and performance
-requirements.
+## Introduction
 
-Краткое описание:
+Algora is a modern website built with Next.js that explores the intersection of art and algorithms. It blends rich, editorial typography with immersive motion and scroll‑based effects to present highlights, origins, and innovations in a clean two‑column layout.
 
-Современный сайт на Next.js для малого и среднего бизнеса. Проект реализован с
-акцентом на адаптивность, анимации и удобство использования. В работе
-применялись современные подходы к разработке и оптимизации интерфейса.
+## Features
 
-**Используемые инструменты и технологии:**
+- App Router architecture with fast server‑side rendering
+- Lenis‑powered smooth scrolling and inertia
+- Cinematic transitions via GSAP and Framer‑style timelines with `@gsap/react`
+- Lottie‑web for lightweight vector animations
+- Split‑Type for dynamic text effects and reveals
+- Fully responsive and keyboard‑navigable sections
 
-- Next.js
-- React
-- GSAP and @gsap/react (animations)
-- @studio-freight/react-lenis (smooth scrolling)
-- Lottie-web (SVG animations)
-- - Reactions
-- Split-type (text effects)
+## Tech Stack
 
-The project scales easily and supports modern design and
-performance requirements.
+- Next.js 15 (App Router)
+- React 18
+- GSAP 3 + `@gsap/react`
+- `@studio-freight/react-lenis` (smooth scrolling)
+- `lottie-web` (SVG animations)
+- `split-type` (typographic effects)
 
-Проект легко масштабируется и поддерживает современные требования к дизайну и
-производительности.
+## Screenshots
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [
-`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+  <img src="public/images/home/hero.jpeg" alt="Hero — Fusion of Art and Algorithms" />
+  <br />
+  <em>Hero section with scanline aesthetic</em>
+</p>
+
+<p align="center">
+  <img src="public/images/home/case-study-1.jpeg" alt="Case Study 1" />
+  <br />
+  <em>Editorial layout with image‑led storytelling</em>
+</p>
+
+<p align="center">
+  <img src="public/images/home/case-study-2.jpeg" alt="Case Study 2" />
+  <br />
+  <em>Two‑column section and subtle motion cues</em>
+</p>
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+
+### Installation
+
+```bash
+npm install
+```
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the
-result.
+Open `http://localhost:3000` in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates
-as you edit the file.
+### Production
 
-This project uses [
-`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts)
-to automatically optimize and load [Geist](https://vercel.com/font), a new font
-family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `dev` – start local dev server
+- `build` – production build
+- `start` – run the built app
+- `lint` – run Next.js ESLint checks
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check
-out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your
-feedback and contributions are welcome!
+```
+algora/
+├─ public/
+│  └─ images/
+│     └─ home/
+│        ├─ hero.jpeg
+│        ├─ case-study-1.jpeg
+│        └─ case-study-2.jpeg
+├─ src/
+│  ├─ app/              # App Router pages and layouts
+│  └─ components/       # UI components and sections
+├─ next.config.mjs
+└─ package.json
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use
-the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
-from the creators of Next.js.
-
-Check out
-our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying)
-for more details.
+If this project inspires you, ⭐ the repo and adapt it to your own narrative. Contributions that improve performance, accessibility, or motion quality are welcome.
