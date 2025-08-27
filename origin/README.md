@@ -1,72 +1,102 @@
-# Origin
+<div align="center">
+  <br />
+  <img src="public/origin1.png" alt="Origin — Hero" />
+  <br />
+  <br />
 
-Origin is a minimalistic starter template for fast development of modern
-web applications on React and Vite.
+  <div>
+    <img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
+    <img src="https://img.shields.io/badge/Vite-6-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+    <img src="https://img.shields.io/badge/React_Router-7-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white" alt="React Router" />
+    <img src="https://img.shields.io/badge/Framer_Motion-11-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
+    <img src="https://img.shields.io/badge/GSAP-3-88CE02?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP" />
+    <img src="https://img.shields.io/badge/Three.js-0.171-000000?style=for-the-badge&logo=threedotjs&logoColor=white" alt="Three.js" />
+    <img src="https://img.shields.io/badge/Lenis-Scroll-111111?style=for-the-badge" alt="Lenis" />
+  </div>
 
-## About the project
+  <h3 align="center">Origin — Motion‑first React Starter</h3>
+  <p align="center">A minimal React + Vite starter with smooth scroll, 3D (three.js), and modern routing.</p>
+</div>
 
-This project is designed for front-end developers who need a clean,
-fast, and flexibly customizable template for launching new applications. The template
-implements the basic structure of the project, linters and plug-ins are configured, which
-allows you to start development immediately without unnecessary settings.
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Tech Stack](#tech-stack)
+4. [Screenshots](#screenshots)
+5. [Getting Started](#getting-started)
+6. [Scripts](#scripts)
+7. [Project Structure](#project-structure)
+
+## Introduction
+
+Origin is a minimalist starter for building modern React sites quickly. It ships with motion utilities (Framer Motion, GSAP), smooth scrolling, and optional 3D via three.js — ideal for landing pages and creative sites.
 
 ## Features
 
-- Minimalistic structure and clean code
-- Instant build and launch thanks to Vite
-- Support for React/JSX and modern ecosystem features
-- Flexible linting settings (ESLint, Prettier)
-- Modern plug-ins to increase productivity
-- Easily expanded to meet the needs of small and medium-sized businesses
-- Adaptive layout and readiness for SEO optimization
+- Clean project structure with Vite dev experience
+- Client‑side routing with React Router 7
+- Smooth scroll (Lenis) and motion (Framer Motion/GSAP)
+- Optional 3D scenes using three.js
+- Responsive layout and accessible navigation
+- Linting configured with ESLint
 
-## Technology
+## Tech Stack
 
-- React
-- Vite
-- ESLint, Prettier
-- @vitejs/plugin-react, @vitejs/plugin-react-swc
+- React 18 + Vite 6
+- React Router 7
+- Framer Motion 11, GSAP 3
+- Three.js 0.171
+- Lenis, @studio‑freight/react‑lenis
+- ESLint
 
-## For whom
+## Screenshots
 
-This template is perfect for creating landing pages, corporate websites, MVPs, and
-any projects where launch speed and ease of support are important.
+<p align="center">
+  <img src="public/origin1.png" alt="Hero — Origin" />
+  <br />
+  <em>Hero section</em>
+</p>
 
-Origin — минималистичный стартовый шаблон для быстрой разработки современных
-веб-приложений на React и Vite.
+<p align="center">
+  <img src="public/origin2.png" alt="Projects — Origin" />
+  <br />
+  <em>Projects/sections with motion</em>
+</p>
 
-## О проекте
+## Getting Started
 
-Этот проект предназначен для фронтенд-разработчиков, которым нужен чистый,
-быстрый и гибко настраиваемый шаблон для старта новых приложений. В шаблоне
-реализована базовая структура проекта, настроены линтеры и плагины, что
-позволяет сразу приступить к разработке без лишних настроек.
+```bash
+npm install
+npm run dev
+```
 
-## Особенности
+Open `http://localhost:5173` in your browser.
 
-- Минималистичная структура и чистый код
-- Мгновенная сборка и запуск благодаря Vite
-- Поддержка React/JSX и современных возможностей экосистемы
-- Гибкая настройка линтинга (ESLint, Prettier)
-- Современные плагины для повышения продуктивности
-- Легко расширяется под задачи малого и среднего бизнеса
-- Адаптивная верстка и готовность к SEO-оптимизации
+## Scripts
 
-## Технологии
+- `dev` – start the Vite dev server
+- `build` – production build
+- `preview` – preview the production build locally
+- `lint` – run ESLint
 
-- React
-- Vite
-- ESLint, Prettier
-- @vitejs/plugin-react, @vitejs/plugin-react-swc
+## Project Structure
 
-## Для кого
+```
+origin/
+├─ public/
+│  ├─ origin1.png  # add later
+│  └─ origin2.png  # add later
+├─ src/
+│  ├─ pages/
+│  ├─ components/
+│  ├─ assets/
+│  ├─ App.jsx
+│  └─ main.jsx
+├─ index.html
+└─ vite.config.js
+```
 
-Этот шаблон отлично подойдет для создания лендингов, корпоративных сайтов, MVP и
-любых проектов, где важны скорость запуска и простота поддержки.
+---
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
-  uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)
-  uses [SWC](https://swc.rs/) for Fast Refresh
+Add screenshots into `public/` using the filenames above to enable previews in this README.
