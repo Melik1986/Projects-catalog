@@ -52,7 +52,7 @@ Nico Palmer is a portfolio site for a photographer/videographer. It highlights s
 ## Screenshots
 
 <p align="center">
-  <img src="public/nico-palmer1.png" alt="Hero — Nico Palmer" />
+  <img src="public/nico-palmer3.png" alt="Hero — Nico Palmer" />
   <br />
   <em>Hero section</em>
 </p>
