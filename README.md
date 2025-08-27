@@ -1,24 +1,24 @@
-# Обзор проектов в репозитории
+# Repository Overview
 
-В каталоге находится несколько независимых фронтенд-проектов. Для каждого проекта подготовлен файл `project.md` в его корневой директории с подробным техническим обзором.
+This repository contains multiple independent frontend projects. Each project includes a `project.md` with a “solution showcase” analysis: structure, technologies, architectural patterns, UI/styling, code quality, key modules, best practices, and recommendations.
 
-Краткое описание проектов:
+Quick index:
 
 - `algora/`
-  - Next.js (App Router), GSAP/ScrollTrigger, ReactLenis, кастомные анимации и декоративные компоненты.
+  - Next.js (App Router), GSAP/ScrollTrigger, ReactLenis. Immersive scroll storytelling; see `algora/project.md`.
 - `format-archive/`
-  - Next.js, Zustand (персистентная корзина), Lenis, view transitions. Магазин/витрина с корзиной.
+  - Next.js, Zustand (persisted cart), Lenis, view transitions. Storefront/catalog; see `format-archive/project.md`.
 - `social_media_app-main/`
-  - React + Vite, TypeScript, Tailwind, React Query, Appwrite SDK, формы на react-hook-form + zod. Социальное приложение.
+  - React + Vite, TypeScript, Tailwind, React Query, Appwrite SDK, RHF+Zod. Social app; see `social_media_app-main/project.md`.
 - `origin/`
-  - React + Vite, Framer Motion, ReactLenis, анимированные переходы и секции. Небольшой сайт с работами.
+  - React + Vite, Framer Motion, ReactLenis. Animated portfolio; see `origin/project.md`.
 - `balanced-pitch/`
-  - React + Vite, анимированные переходы, параллакс/плеер, страницы о компании/решениях/новостях.
+  - React + Vite, Framer Motion, parallax/smooth scrolling. Company site; see `balanced-pitch/project.md`.
 - `aiden-brooks/`
-  - React + Vite, Framer Motion, навбар/футер/превью, страницы портфолио.
+  - React + Vite, Framer Motion. Portfolio with animated transitions; see `aiden-brooks/project.md`.
 - `nico-palmer/`
-  - React + Vite, Framer Motion, GSAP, SplitType, плавный скролл и насыщенные анимации.
+  - React + Vite, Framer Motion, GSAP, SplitType, Lenis. Motion-heavy portfolio; see `nico-palmer/project.md`.
 - `otis-valen/`
-  - Статический сайт на HTML+Vanilla JS, GSAP и Lenis, многостраничная структура.
+  - Static HTML + Vanilla JS with GSAP and Lenis. Multi-page site; see `otis-valen/project.md`.
 
-Смотрите `project.md` внутри каждого проекта для полной структуры, технологий, архитектуры, UI/UX, качества кода, ключевых компонентов и рекомендаций.
+For detailed analysis, open each project’s `project.md`.
