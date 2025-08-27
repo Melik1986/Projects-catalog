@@ -1,61 +1,95 @@
-# Otis Valen Portfolio
+<div align="center">
+  <br />
+  <img src="public/otis-valen1.png" alt="Otis Valen — Hero" />
+  <br />
+  <br />
 
-A website is a portfolio for a creative specialist (designer, photographer, or
-artist) that demonstrates works and provides information about themselves and
-services.
+  <div>
+    <img src="https://img.shields.io/badge/HTML5-–-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+    <img src="https://img.shields.io/badge/GSAP-3-88CE02?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP" />
+    <img src="https://img.shields.io/badge/Lenis-Scroll-111111?style=for-the-badge" alt="Lenis" />
+    <img src="https://img.shields.io/badge/Vite-6-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  </div>
 
-## Purpose
+  <h3 align="center">Otis Valen — Creative Portfolio</h3>
+  <p align="center">Lightweight portfolio with GSAP animations, smooth scroll, and static pages powered by Vite.</p>
+</div>
 
-The website serves as a personal showcase of works, allowing visitors to familiarize themselves with
-projects, find out contact information and get an idea of the author's style.
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Tech Stack](#tech-stack)
+4. [Screenshots](#screenshots)
+5. [Getting Started](#getting-started)
+6. [Scripts](#scripts)
+7. [Project Structure](#project-structure)
+
+## Introduction
+
+This is a minimalist portfolio for a creative professional (designer, photographer, or artist). It showcases works, provides contact details, and communicates a personal visual style through motion and clean typography.
 
 ## Features
 
-- Several thematic pages: home, projects, about yourself, contacts
-- Modern minimalistic design
-- Adaptive layout for mobile and desktop devices
-- Fast page loading
-- Easy navigation between sections
-- SEO optimization for search engines
+- Pages: Home, Projects, About, Contact
+- Minimal, modern design
+- Responsive layout (mobile and desktop)
+- Smooth GSAP motions and Lenis scrolling
+- Fast loads via Vite and optimized assets
+- Straightforward navigation and basic SEO markup
 
-## Technologies used
+## Tech Stack
 
-- HTML5, CSS3 (including modern approaches to adaptability)
-- JavaScript (structured in a separate js folder)
-- Vite for assembly and optimization
-- Static page generation
+- HTML5, CSS
+- Vanilla JavaScript
+- GSAP 3, Lenis 1.3
+- Vite 6 (dev server and build)
 
-## For whom
+## Screenshots
 
-For creative professionals who want to quickly launch a modern
-portfolio website without unnecessary dependencies and complex frameworks.
+<p align="center">
+  <img src="public/otis-valen1.png" alt="Hero — Otis Valen" />
+  <br />
+  <em>Hero section</em>
+</p>
 
-Веб-сайт-портфолио для творческого специалиста (дизайнера, фотографа или
-художника), демонстрирующий работы и предоставляющий информацию о себе и
-услугах.
+<p align="center">
+  <img src="public/otis-valen2.png" alt="Projects — Otis Valen" />
+  <br />
+  <em>Projects grid</em>
+</p>
 
-## Назначение
+## Getting Started
 
-Сайт служит персональной витриной работ, позволяет посетителям ознакомиться с
-проектами, узнать контактную информацию и получить представление о стиле автора.
+```bash
+npm install
+npm run dev
+```
 
-## Особенности
+Open `http://localhost:5173` in your browser.
 
-- Несколько тематических страниц: главная, проекты, о себе, контакты
-- Современный минималистичный дизайн
-- Адаптивная верстка для мобильных и десктопных устройств
-- Быстрая загрузка страниц
-- Простая навигация между разделами
-- SEO-оптимизация для поисковых систем
+## Scripts
 
-## Используемые технологии
+- `dev` – start the Vite dev server
+- `build` – production build
+- `preview` – preview the production build locally
+- `host` – run dev server with `--host`
 
-- HTML5, CSS3 (включая современные подходы к адаптивности)
-- JavaScript (структурирован в отдельной папке js)
-- Vite для сборки и оптимизации
-- Статическая генерация страниц
+## Project Structure
 
-## Для кого
+```
+otis-valen/
+├─ public/
+│  ├─ otis-valen1.png  # add later
+│  └─ otis-valen2.png  # add later
+├─ css/
+├─ js/
+├─ index.html
+├─ about.html
+├─ work.html
+└─ contact.html
+```
 
-Для творческих специалистов, желающих быстро запустить современный
-сайт-портфолио без лишних зависимостей и сложных фреймворков.
+---
+
+Place screenshots into `public/` using the filenames above to activate previews.
