@@ -1,57 +1,101 @@
-# Nico Palmer
+<div align="center">
+  <br />
+  <img src="public/nico-palmer1.png" alt="Nico Palmer — Hero" />
+  <br />
+  <br />
 
-A portfolio website for a photographer and videographer.
+  <div>
+    <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
+    <img src="https://img.shields.io/badge/Vite-6-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+    <img src="https://img.shields.io/badge/React_Router-7-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white" alt="React Router" />
+    <img src="https://img.shields.io/badge/Framer_Motion-11-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
+    <img src="https://img.shields.io/badge/GSAP-3-88CE02?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP" />
+    <img src="https://img.shields.io/badge/Lenis-Scroll-111111?style=for-the-badge" alt="Lenis" />
+    <img src="https://img.shields.io/badge/ESLint-9-4B32C3?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint" />
+  </div>
 
-**Purpose:**
-A showcase of works, services, and reviews to attract new small and medium
--sized business customers.
+  <h3 align="center">Nico Palmer — Photography & Videography Portfolio</h3>
+  <p align="center">A cinematic React + Vite portfolio with smooth scroll, route transitions, and editorial sections.</p>
+</div>
 
-**Features:**
+## Table of Contents
 
-- Catalog of projects and works
-- Modern design and animations
-- Adaptive layout
-- Fast loading
-- SEO optimization
-- Easy navigation
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Tech Stack](#tech-stack)
+4. [Screenshots](#screenshots)
+5. [Getting Started](#getting-started)
+6. [Scripts](#scripts)
+7. [Project Structure](#project-structure)
 
-Сайт-портфолио для фотографа и видеографа.
+## Introduction
 
-**Назначение:**
-Витрина работ, услуг и отзывов для привлечения новых клиентов малого и среднего
-бизнеса.
+Nico Palmer is a portfolio site for a photographer/videographer. It highlights selected works, services, and testimonials with motion‑driven storytelling and a clean, responsive layout.
 
-**Особенности:**
+## Features
 
-- Каталог проектов и работ
-- Современный дизайн и анимации
-- Адаптивная верстка
-- Быстрая загрузка
-- SEO-оптимизация
-- Удобная навигация
+- Project catalog and detail pages
+- Smooth scrolling via Lenis
+- Section and route transitions with Framer Motion and GSAP
+- Client‑side routing with React Router 7
+- Responsive, accessibility‑minded layout
+- Linting with ESLint
 
-**Технологии:**
+## Tech Stack
 
-- React
-- Vite
-- GSAP
-- Zustand
-- Современные CSS
+- React 19 + Vite 6
+- React Router 7
+- Framer Motion 11, GSAP 3
+- Lenis (smooth scrolling)
+- ESLint
 
-This template provides a minimal setup to get React working in Vite with HMR and
-some ESLint rules.
+## Screenshots
 
-Currently, two official plugins are available:
+<p align="center">
+  <img src="public/nico-palmer1.png" alt="Hero — Nico Palmer" />
+  <br />
+  <em>Hero section</em>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
-  uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)
-  uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+  <img src="public/nico-palmer2.png" alt="Projects — Nico Palmer" />
+  <br />
+  <em>Projects grid</em>
+</p>
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript
-and enable type-aware lint rules. Check out
-the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts)
-to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io)
-in your project.
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173` in your browser.
+
+## Scripts
+
+- `dev` – start the Vite dev server
+- `build` – production build
+- `preview` – preview the production build locally
+- `lint` – run ESLint
+
+## Project Structure
+
+```
+nico-palmer/
+├─ public/
+│  ├─ nico-palmer1.png   # add later
+│  └─ nico-palmer2.png   # add later
+├─ src/
+│  ├─ pages/
+│  ├─ components/
+│  ├─ assets/
+│  ├─ App.jsx
+│  └─ main.jsx
+├─ index.html
+└─ vite.config.js
+```
+
+---
+
+Drop your screenshots into `public/` using the filenames above to activate the preview images.
