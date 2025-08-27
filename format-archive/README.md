@@ -1,102 +1,117 @@
-# Format Archive modern showcase website for small and medium-sized businesses,
+<div align="center">
+  <br />
+  <img src="public/format-archive1.png" alt="Format Archive — Hero" />
+  <br />
+  <br />
 
-focused on displaying products and articles in a convenient and visually
-appealing format. The project is implemented with an emphasis on ease of use,
-adaptability and high performance.
+  <div>
+    <img src="https://img.shields.io/badge/Next.js-15.3-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+    <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
+    <img src="https://img.shields.io/badge/Zustand-5-000000?style=for-the-badge" alt="Zustand" />
+    <img src="https://img.shields.io/badge/Lenis-Scroll-111111?style=for-the-badge" alt="Lenis" />
+    <img src="https://img.shields.io/badge/next--view--transitions-0.3-000000?style=for-the-badge" alt="next-view-transitions" />
+    <img src="https://img.shields.io/badge/GSAP-3-88CE02?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP" />
+  </div>
 
-## Project Features
+  <h3 align="center">Format Archive — Modern Product & Editorial Storefront</h3>
+  <p align="center">A Next.js site combining a product catalog, editorial stories, smooth scroll, and a persisted cart.</p>
+</div>
 
-- A catalog of products and articles with the ability to filter and search
-- Modern design and smooth animations
-- Adaptive layout for all devices
-- Fast page loading and SEO optimization
-- Simple and intuitive navigation
+## Table of Contents
 
-Format Archive — современный сайт-витрина для малого и среднего бизнеса,
-ориентированный на демонстрацию товаров и статей в удобном и визуально
-привлекательном формате. Проект реализован с акцентом на простоту использования,
-адаптивность и высокую производительность.
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Tech Stack](#tech-stack)
+4. [Screenshots](#screenshots)
+5. [Getting Started](#getting-started)
+6. [Scripts](#scripts)
+7. [Project Structure](#project-structure)
 
-## Особенности проекта
+## Introduction
 
-- Каталог товаров и статей с возможностью фильтрации и поиска
-- Современный дизайн и плавные анимации
-- Адаптивная верстка для всех устройств
-- Быстрая загрузка страниц и оптимизация под SEO
-- Простая и интуитивная навигация
+Format Archive is a content‑first storefront that blends product cards with editorial sections. A lightweight cart is powered by Zustand with `persist` so items remain after reloads. The App Router architecture keeps pages fast, while Lenis and view transitions deliver a refined scrolling experience.
 
-## Technologies used
+## Features
 
-- **Next.js** is a modern React framework for server rendering and
-  routing
-- **React** — library for building user interfaces
-- **GSAP** and **@gsap/react** — for animations and smooth transitions
-- **Lenis** — for smooth scrolling
-- **Split-type** — for text animation
-- **Zustand** — for managing the application status
-- **next-view-transitions** — for smooth transitions between pages
+- Product and editorial catalog with clean grid layouts
+- Cart drawer with add/remove, counters, and persisted state
+- Smooth scrolling (Lenis) and page transitions (next‑view‑transitions)
+- Animations with GSAP and `@gsap/react`
+- App Router structure for performance and DX
+- Responsive design and keyboard‑friendly navigation
 
-The website is designed taking into account the requirements of small and
-medium-sized businesses: simplicity,
-functionality, adaptability and modern appearance.
+## Tech Stack
 
-## Используемые технологии
+- Next.js 15.3 (App Router)
+- React 19
+- Zustand 5 with `persist`
+- Lenis 1.3
+- next‑view‑transitions 0.3
+- GSAP 3 + `@gsap/react`
 
-- **Next.js** — современный React-фреймворк для серверного рендеринга и
-  маршрутизации
-- **React** — библиотека для построения пользовательских интерфейсов
-- **GSAP** и **@gsap/react** — для анимаций и плавных переходов
-- **Lenis** — для плавного скроллинга
-- **Split-type** — для анимации текста
-- **Zustand** — для управления состоянием приложения
-- **next-view-transitions** — для плавных переходов между страницами
+## Screenshots
 
-Сайт разработан с учетом требований малого и среднего бизнеса: простота,
-функциональность, адаптивность и современный внешний вид.
+<p align="center">
+  <img src="public/format-archive1.png" alt="Hero — Format Archive" />
+  <br />
+  <em>Minimal hero with strong typographic branding</em>
+</p>
+
+<p align="center">
+  <img src="public/format-archive2.png" alt="Catalog Grid and Cart" />
+  <br />
+  <em>Product grid with pricing and editorial blocks</em>
+</p>
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+
+### Installation
+
+```bash
+npm install
+```
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the
-result.
+Open `http://localhost:3000` in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates
-as you edit the file.
+### Production
 
-This project uses [
-`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts)
-to automatically optimize and load [Geist](https://vercel.com/font), a new font
-family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `dev` – start local dev server
+- `build` – production build
+- `start` – run the built app
+- `lint` – run Next.js ESLint
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check
-out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your
-feedback and contributions are welcome!
+```
+format-archive/
+├─ public/
+│  ├─ format-archive1.png
+│  └─ format-archive2.png
+├─ src/
+│  ├─ app/              # App Router pages/sections
+│  ├─ components/       # Menu, Cart, layout parts
+│  └─ store/            # Zustand cart store (persisted)
+├─ next.config.mjs
+└─ package.json
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use
-the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
-from the creators of Next.js.
-
-Check out
-our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying)
-for more details.
+See `project.md` for an in‑depth code walkthrough (state architecture, selectors, and best practices).
