@@ -48,12 +48,6 @@ This is a minimalist portfolio for a creative professional (designer, photograph
 ## Screenshots
 
 <p align="center">
-  <img src="public/otis-valen1.png" alt="Hero — Otis Valen" />
-  <br />
-  <em>Hero section</em>
-</p>
-
-<p align="center">
   <img src="public/otis-valen2.png" alt="Projects — Otis Valen" />
   <br />
   <em>Projects grid</em>
@@ -80,8 +74,8 @@ Open `http://localhost:5173` in your browser.
 ```
 otis-valen/
 ├─ public/
-│  ├─ otis-valen1.png  # add later
-│  └─ otis-valen2.png  # add later
+│  ├─ 
+│  └─ 
 ├─ css/
 ├─ js/
 ├─ index.html
@@ -90,6 +84,3 @@ otis-valen/
 └─ contact.html
 ```
 
----
-
-Place screenshots into `public/` using the filenames above to activate previews.
