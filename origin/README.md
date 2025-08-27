@@ -53,7 +53,7 @@ Origin is a minimalist starter for building modern React sites quickly. It ships
 ## Screenshots
 
 <p align="center">
-  <img src="public/origin1.png" alt="Hero — Origin" />
+  <img src="public/origin3.png" alt="Hero — Origin" />
   <br />
   <em>Hero section</em>
 </p>
