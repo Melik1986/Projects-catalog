@@ -85,8 +85,8 @@ Open `http://localhost:5173` in your browser.
 ```
 origin/
 ├─ public/
-│  ├─ origin1.png  # add later
-│  └─ origin2.png  # add later
+│  ├─ 
+│  └─ 
 ├─ src/
 │  ├─ pages/
 │  ├─ components/
@@ -95,8 +95,4 @@ origin/
 │  └─ main.jsx
 ├─ index.html
 └─ vite.config.js
-```
 
----
-
-Add screenshots into `public/` using the filenames above to enable previews in this README.
