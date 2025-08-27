@@ -1,21 +1,50 @@
 # Algora
 
-Краткое описание:
+Short description:
 
-Современный сайт на Next.js для малого и среднего бизнеса. Проект реализован с акцентом на адаптивность, анимации и удобство использования. В работе применялись современные подходы к разработке и оптимизации интерфейса.
+A modern website on Next.js for small and medium-sized businesses. The project
+was implemented with an emphasis on adaptability, animation and usability. The
+work applied modern approaches to the development and optimization of the
+interface.
 
-**Используемые инструменты и технологии:**
+**Tools and technologies used:**
+
 - Next.js
 - React
-- GSAP и @gsap/react (анимации)
-- @studio-freight/react-lenis (плавный скролл)
-- Lottie-web (SVG-анимации)
-- React-icons
-- Split-type (текстовые эффекты)
+- GSAP and @gsap/react (animations)
+- @studio-freight/react-lenis (smooth scrolling)
+- Lottie-web (SVG animations)
+-
+    - Reactions
+- Split-type (text effects)
 
-Проект легко масштабируется и поддерживает современные требования к дизайну и производительности.
+The project scales easily and supports modern design and performance
+requirements.
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Краткое описание:
+
+Современный сайт на Next.js для малого и среднего бизнеса. Проект реализован с
+акцентом на адаптивность, анимации и удобство использования. В работе
+применялись современные подходы к разработке и оптимизации интерфейса.
+
+**Используемые инструменты и технологии:**
+
+- Next.js
+- React
+- GSAP and @gsap/react (animations)
+- @studio-freight/react-lenis (smooth scrolling)
+- Lottie-web (SVG animations)
+- - Reactions
+- Split-type (text effects)
+
+The project scales easily and supports modern design and
+performance requirements.
+
+Проект легко масштабируется и поддерживает современные требования к дизайну и
+производительности.
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [
+`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
@@ -31,23 +60,35 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the
+result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `app/page.js`. The page auto-updates
+as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses [
+`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts)
+to automatically optimize and load [Geist](https://vercel.com/font), a new font
+family for Vercel.
 
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
+  features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+You can check
+out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your
+feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use
+the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
+from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out
+our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying)
+for more details.

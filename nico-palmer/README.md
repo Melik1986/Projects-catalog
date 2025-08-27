@@ -1,11 +1,28 @@
 # Nico Palmer
 
+A portfolio website for a photographer and videographer.
+
+**Purpose:**
+A showcase of works, services, and reviews to attract new small and medium
+-sized business customers.
+
+**Features:**
+
+- Catalog of projects and works
+- Modern design and animations
+- Adaptive layout
+- Fast loading
+- SEO optimization
+- Easy navigation
+
 Сайт-портфолио для фотографа и видеографа.
 
 **Назначение:**
-Витрина работ, услуг и отзывов для привлечения новых клиентов малого и среднего бизнеса.
+Витрина работ, услуг и отзывов для привлечения новых клиентов малого и среднего
+бизнеса.
 
 **Особенности:**
+
 - Каталог проектов и работ
 - Современный дизайн и анимации
 - Адаптивная верстка
@@ -14,19 +31,27 @@
 - Удобная навигация
 
 **Технологии:**
+
 - React
 - Vite
 - GSAP
 - Zustand
 - Современные CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal setup to get React working in Vite with HMR and
+some ESLint rules.
 
 Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
+  uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)
+  uses [SWC](https://swc.rs/) for Fast Refresh
 
 ## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+If you are developing a production application, we recommend using TypeScript
+and enable type-aware lint rules. Check out
+the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts)
+to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io)
+in your project.

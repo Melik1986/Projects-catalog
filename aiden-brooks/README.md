@@ -1,8 +1,27 @@
 # React + Vite
 
+## Project Description
+
+This is a one-page SPA application developed on React and Vite,
+representing the Aiden Brooks portfolio. The project demonstrates
+web development skills and uses modern technologies to create an interactive and
+visually appealing user experience.
+
 ## Описание проекта
 
-Это одностраничное приложение (SPA), разработанное на React и Vite, представляющее собой портфолио Aiden Brooks. Проект демонстрирует навыки веб-разработки и использует современные технологии для создания интерактивного и визуально привлекательного пользовательского опыта.
+Это одностраничное приложение (SPA), разработанное на React и Vite,
+представляющее собой портфолио Aiden Brooks. Проект демонстрирует навыки
+веб-разработки и использует современные технологии для создания интерактивного и
+визуально привлекательного пользовательского опыта.
+
+## Technologies used
+
+- **Frontend Framework:** React
+- **Importer and Dev Server:** Vite
+- **Routing:** React Router DOM (`react-router-dom')
+- **- **Animations:** Frame Motion (`frames-motion') and GAAP (`gaap`)
+- **Smooth scrolling:** Lenis (`lenis`)
+- **Linting:** ESLint to maintain code quality
 
 ## Используемые технологии
 
@@ -13,11 +32,18 @@
 - **Плавная прокрутка:** Lenis (`lenis`)
 - **Линтинг:** ESLint для поддержания качества кода
 
-Проект создан с использованием Vite шаблона для React, что обеспечивает быструю разработку и сборку.
+The project was created using the Vite template for React, which ensures fast
+development and assembly.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Проект создан с использованием Vite шаблона для React, что обеспечивает быструю
+разработку и сборку.
+
+This template provides a minimal setup to get React working in Vite with HMR and
+some ESLint rules.
 
 Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
+  uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)
+  uses [SWC](https://swc.rs/) for Fast Refresh
