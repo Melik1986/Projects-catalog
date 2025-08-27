@@ -84,8 +84,8 @@ Open `http://localhost:5173` in your browser.
 ```
 nico-palmer/
 ├─ public/
-│  ├─ nico-palmer1.png   # add later
-│  └─ nico-palmer2.png   # add later
+│  
+│  
 ├─ src/
 │  ├─ pages/
 │  ├─ components/
@@ -94,8 +94,5 @@ nico-palmer/
 │  └─ main.jsx
 ├─ index.html
 └─ vite.config.js
-```
 
----
 
-Drop your screenshots into `public/` using the filenames above to activate the preview images.
