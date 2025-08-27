@@ -57,12 +57,6 @@ This repository contains a single‑page portfolio (SPA) for Aiden Brooks. It em
   <em>Landing screen</em>
 </p>
 
-<<<<<<< Current (Your changes)
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
-  uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)
-  uses [SWC](https://swc.rs/) for Fast Refresh
-=======
 <p align="center">
   <img src="public/aiden-brooks2.png" alt="Projects — Aiden Brooks" />
   <br />
@@ -124,4 +118,3 @@ aiden-brooks/
 ---
 
 If you find this project helpful, feel free to ⭐ the repo and adapt it to your own portfolio. PRs for improvements and accessibility fixes are welcome.
->>>>>>> Incoming (Background Agent changes)
