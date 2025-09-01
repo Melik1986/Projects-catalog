@@ -19,6 +19,7 @@ nav .logo {
 
 nav .logo a {
   color: var(--bg);
+  -webkit-user-select: none;
   user-select: none;
 }
 
@@ -34,6 +35,7 @@ nav .menu-toggle-btn.menu-open {
 }
 
 nav .menu-toggle-btn p {
+  -webkit-user-select: none;
   user-select: none;
 }
 
@@ -88,6 +90,7 @@ nav .menu-toggle-btn-wrapper {
 
 .nav-overlay .nav-items .nav-item p {
   font-size: 2rem;
+  -webkit-user-select: none;
   user-select: none;
 }
 
@@ -125,6 +128,7 @@ nav .menu-toggle-btn-wrapper {
 
 .nav-overlay .nav-footer .nav-footer-item p {
   font-size: 0.75rem;
+  -webkit-user-select: none;
   user-select: none;
 }
 
