@@ -1,18 +1,18 @@
 <div align="center">
-	<br />
-	<img src="public/terrene-hero.png" alt="Terrene — Hero" style="max-width:900px; width:100%;"/>
-	<br />
-	<br />
+  <br />
+  <img src="public/terrene-hero.png" alt="Terrene — Hero" style="max-width:900px; width:100%;"/>
+  <br />
+  <br />
 
-	<div>
-		<img src="https://img.shields.io/badge/Next-15-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next" />
-		<img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
-		<img src="https://img.shields.io/badge/GSAP-3-88CE02?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP" />
-		<img src="https://img.shields.io/badge/Lenis-Scroll-111111?style=for-the-badge" alt="Lenis" />
-	</div>
+  <div>
+    <img src="https://img.shields.io/badge/Next-15-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next" />
+    <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
+    <img src="https://img.shields.io/badge/GSAP-3-88CE02?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP" />
+    <img src="https://img.shields.io/badge/Lenis-Scroll-111111?style=for-the-badge" alt="Lenis" />
+  </div>
 
-	<h3 align="center">Terrene — Studio Website (Next.js)</h3>
-	<p align="center">A visually rich Next.js site used as a portfolio/showcase for interior and spatial design — heavy on imagery, transitions and polished UI.</p>
+  <h3 align="center">Terrene — Studio Website (Next.js)</h3>
+  <p align="center">A visually rich Next.js site used as a portfolio/showcase for interior and spatial design — heavy on imagery, transitions and polished UI.</p>
 </div>
 
 ## Table of Contents
@@ -68,9 +68,15 @@ Why these technologies:
 ## Screenshots
 
 <p align="center">
-	<img src="public/terrene.png" alt="Landing — Terrene" style="max-width:1100px; width:100%;" />
-	<br />
-	<em>Alternate landing / gallery preview</em>
+  <img src="public/terrene-hero.png" alt="Hero — Terrene" style="max-width:1100px; width:100%;" />
+  <br />
+  <em>Hero / landing view</em>
+</p>
+
+<p align="center">
+  <img src="public/terrene.png" alt="Landing — Terrene" style="max-width:1100px; width:100%;" />
+  <br />
+  <em>Alternate landing / gallery preview</em>
 </p>
 
 ## Getting Started
@@ -130,12 +136,12 @@ Example: simple component contract for an image card in `src/components/ImageCar
 ```jsx
 // props: {src, title, href}
 export default function ImageCard({ src, title, href }) {
-	return (
-		<a href={href} className="image-card">
-			<img src={src} alt={title} loading="lazy" />
-			<h3>{title}</h3>
-		</a>
-	)
+  return (
+    <a href={href} className="image-card">
+      <img src={src} alt={title} loading="lazy" />
+      <h3>{title}</h3>
+    </a>
+  )
 }
 ```
 
@@ -162,13 +168,13 @@ Accessibility notes:
 ## Key Modules
 
 1) `src/app/layout.js` — global layout, metadata, and providers (Lenis/animation providers)
-	 - Role: attach global styles, fonts, and layout wrappers.
+  - Role: attach global styles, fonts, and layout wrappers.
 2) `src/components/Hero.jsx` — hero section with imagery and CTA
-	 - Role: top-of-site presentation, responsive image handling.
+  - Role: top-of-site presentation, responsive image handling.
 3) `src/components/Gallery.jsx` — gallery grid and lightbox behavior
-	 - Role: renders project thumbnails and handles navigation into project pages.
+  - Role: renders project thumbnails and handles navigation into project pages.
 4) `src/hooks/useSmoothScroll.js` — Lenis integration and scroll controls
-	 - Role: initializes Lenis and exposes scroll controls for components.
+  - Role: initializes Lenis and exposes scroll controls for components.
 
 ## Best Practices
 
@@ -205,3 +211,4 @@ Improvements:
 ---
 
 This README was created to match the style used across the mono-repo and uses images from `public/` for illustration.
+
