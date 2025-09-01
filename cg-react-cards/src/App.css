@@ -20,6 +20,7 @@ body {
     rotateZ(-120deg);
   transform-style: preserve-3d;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-user-select: none;
   user-select: none;
 }
 
