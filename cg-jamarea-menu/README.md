@@ -2,7 +2,7 @@
 
 <div align="center">
   <br />
-  <img src="public/cg-jamarea.png" alt="CG Jam Area Menu — Interactive Menu" />
+  <img src="public/CG27082025.jpg" alt="CG Jam Area Menu — Interactive Menu" />
   <br />
   <br />
 
