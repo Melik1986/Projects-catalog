@@ -1,72 +1,24 @@
 # Frontend Codebase Analysis: CG Karim Saab Scroll Animation
 
+## 📸 Project Gallery
+
 <div align="center">
-  <div style="position: relative; max-width: 800px; margin: 0 auto;">
-    <div id="gallery-container" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);">
-      <div id="gallery-slides" style="display: flex; transition: transform 0.5s ease-in-out;">
-        <div style="min-width: 100%;">
-          <img src="public/cg-karim-hero.png" alt="CG Karim Saab - Hero Section" style="width: 100%; height: auto; display: block;" />
-        </div>
-        <div style="min-width: 100%;">
-          <img src="public/cg-karim.png" alt="CG Karim Saab - Main View" style="width: 100%; height: auto; display: block;" />
-        </div>
-        <div style="min-width: 100%;">
-          <img src="public/cg-karim1.png" alt="CG Karim Saab - Gallery View" style="width: 100%; height: auto; display: block;" />
-        </div>
-      </div>
-      
-      <button id="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.7); color: white; border: none; padding: 12px 16px; border-radius: 50%; cursor: pointer; font-size: 18px; z-index: 10;">‹</button>
-      <button id="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.7); color: white; border: none; padding: 12px 16px; border-radius: 50%; cursor: pointer; font-size: 18px; z-index: 10;">›</button>
-      
-      <div id="gallery-dots" style="position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
-        <span class="dot active" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.8); cursor: pointer; transition: background 0.3s;"></span>
-        <span class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer; transition: background 0.3s;"></span>
-        <span class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer; transition: background 0.3s;"></span>
-      </div>
-    </div>
-  </div>
+
+### Hero Section
+[![CG Karim Saab - Hero Section](public/cg-karim-hero.png)](public/cg-karim-hero.png)
+*Hero section with dramatic text overlay*
+
+### Main Gallery View  
+[![CG Karim Saab - Main View](public/cg-karim.png)](public/cg-karim.png)
+*Main gallery with masked image reveal effect*
+
+### Gallery Animation
+[![CG Karim Saab - Gallery View](public/cg-karim1.png)](public/cg-karim1.png)
+*Scroll-triggered animation in action*
+
+**Click on any image to view full size**
+
 </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const slides = document.getElementById('gallery-slides');
-  const dots = document.querySelectorAll('.dot');
-  const prevBtn = document.getElementById('prev-btn');
-  const nextBtn = document.getElementById('next-btn');
-  let currentSlide = 0;
-  const totalSlides = 3;
-
-  function updateGallery() {
-    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-    dots.forEach((dot, index) => {
-      dot.style.background = index === currentSlide ? 'rgba(255,255,255,0.8)' : 'rgba(255,255,255,0.3)';
-    });
-  }
-
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    updateGallery();
-  }
-
-  function prevSlide() {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-    updateGallery();
-  }
-
-  nextBtn.addEventListener('click', nextSlide);
-  prevBtn.addEventListener('click', prevSlide);
-
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      currentSlide = index;
-      updateGallery();
-    });
-  });
-
-  // Auto-play every 4 seconds
-  setInterval(nextSlide, 4000);
-});
-</script>
 
 ## 🖼 Project Showcase
 
