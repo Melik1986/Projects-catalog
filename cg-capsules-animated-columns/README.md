@@ -2,8 +2,8 @@
 
 <div align="center">
   <br />
-  <img src="cg-capsules-animated-columns.png" alt="CG Capsules Animated Columns — Interior Design Showcase" />
-  <img src="cg-capsules-animated.png" alt="CG Capsules Animated Columns — Interior Design Showcase" />
+  <img src="public/cg-capsules-animated-columns.png" alt="CG Capsules Animated Columns — Interior Design Showcase" />
+  <img src="public/cg-capsules-animated.png" alt="CG Capsules Animated Columns — Interior Design Showcase" />
   <br />
   <br />
 

@@ -2,7 +2,7 @@
 
 <div align="center">
   <br />
-  <img src="public/scroll-animation.png" alt="Telescope Scroll Animation — Hero" width="800" />
+  <img src="/public/scroll-animation.png" alt="Telescope Scroll Animation — Hero" width="800" />
   <br />
   <br />
 

@@ -2,7 +2,7 @@
 
 <div align="center">
   <br />
-  <img src="public/img.jpg" alt="Phive Text Scroll Animation — Hero" width="800" />
+  <img src="/public/img.jpg" alt="Phive Text Scroll Animation — Hero" width="800" />
   <br />
   <br />
 
