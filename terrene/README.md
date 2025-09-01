@@ -210,5 +210,4 @@ Improvements:
 
 ---
 
-This README was created to match the style used across the mono-repo and uses images from `public/` for illustration.
 
