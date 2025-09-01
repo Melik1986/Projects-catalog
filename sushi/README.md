@@ -1,7 +1,7 @@
 
 <div align="center">
    <br />
-   <img src="public/sushi-hero.png" alt="Sushi — Hero" />
+   <img src="assets/sushi-hero.png" alt="Sushi — Hero" />
    <br />
    <br />
 
