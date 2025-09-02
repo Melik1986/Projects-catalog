@@ -42,21 +42,20 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const checkAuthUser = async () => {
     setIsLoading(true);
     try {
-      const currentAccount = await getCurrentUser();
-      if (currentAccount) {
-        setUser({
-          id: currentAccount.$id,
-          name: currentAccount.name,
-          username: currentAccount.username,
-          email: currentAccount.email,
-          imageUrl: currentAccount.imageUrl,
-          bio: currentAccount.bio,
-        });
-        setIsAuthenticated(true);
-
-        return true;
-      }
-
+      // Временно отключаем проверку Appwrite для демонстрации
+      // const currentAccount = await getCurrentUser();
+      // if (currentAccount) {
+      //   setUser({
+      //     id: currentAccount.$id,
+      //     name: currentAccount.name,
+      //     username: currentAccount.username,
+      //     email: currentAccount.email,
+      //     imageUrl: currentAccount.imageUrl,
+      //     bio: currentAccount.bio,
+      //   });
+      //   setIsAuthenticated(true);
+      //   return true;
+      // }
       return false;
     } catch (error) {
       console.error(error);
