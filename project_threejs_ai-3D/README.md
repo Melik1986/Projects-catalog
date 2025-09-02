@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
   </div>
 
-  <h3 align="center">A 3D Dev Swag Website</h3>
+  <h3 align="center">AI-Powered 3D T-Shirt Customization App</h3>
 
    <div align="center">
      Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
@@ -38,7 +38,7 @@ If you prefer visual learning, this is the perfect resource for you. Follow our 
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Create your own style with our new 3D Swag Customization App. Pick colors, add logos, and try AI designs to make your virtual swag unique. Built using React.js, Three.js, and OpenAI to show the usage of a 3D world with AI
+Create your own personalized t-shirts with our AI-powered 3D customization platform. Choose colors, upload logos, generate AI-designed prints, and preview your unique t-shirt in real-time 3D. Built using React.js, Three.js, and OpenAI for seamless integration of 3D visualization with artificial intelligence.
 
 If you're getting started and need assistance or face any bugs, join our active Discord community with over 27k+ members. It's a place where people help each other out.
 
@@ -60,27 +60,37 @@ If you're getting started and need assistance or face any bugs, join our active 
 
 ## <a name="features">🔋 Features</a>
 
-👉 **3D Swag Generation**: Generate unique 3D shirts/swag items dynamically
+### 🎨 **T-Shirt Customization**
+👉 **3D T-Shirt Preview**: Real-time 3D visualization of customized t-shirts with smooth interactions
 
-👉 **Color Customization**: Apply any color to the 3D shirt/swag for personalized styling.
+👉 **Color Customization**: Choose from unlimited color palette to personalize your t-shirt base color
 
-👉 **Logo Upload Functionality**: Enable users to upload any file as a logo, integrating it seamlessly onto the 3D shirt.
+👉 **Logo Upload**: Upload custom logos and images to place on your t-shirt design
 
-👉 **Texture Image Upload**: Allow users to upload texture images to style the 3D shirt/swag.
+👉 **Texture Application**: Apply custom texture images for unique fabric patterns and designs
 
-👉 **AI-Generated Logo Integration**: Utilize AI to generate logos and intelligently apply them to the 3D shirt.
+### 🤖 **AI-Powered Features**
+👉 **AI-Generated Prints**: Use OpenAI to generate custom designs and prints based on text prompts
 
-👉 **AI-Generated Textures**: Implement AI-generated textures for enhanced 3D shirt customization.
+👉 **AI Logo Generation**: Create unique logos and graphics using artificial intelligence
 
-👉 **Download Options**:Dynamically change the application theme based on the selected color, enhancing user experience.
+👉 **AI Texture Generation**: Generate custom fabric textures and patterns with AI assistance
 
-👉 **Theme Change with Color Selection**: Dynamically change the application theme based on the selected color, enhancing user experience
+### 🛒 **E-commerce Functionality**
+👉 **Order Customization**: Complete t-shirt ordering system with personalized designs
 
-👉 **Responsive 3D Application**: Ensure the application is responsive, delivering a seamless experience across various devices.
+👉 **Download Options**: Export your custom designs as high-quality images
 
-👉 **Framer Motion Animation**: Implement framer motion animations for smooth transitions between different 3D models.
+👉 **Theme Integration**: Dynamic theme changes based on selected t-shirt colors
 
-and many more, including code architecture and reusability 
+### 🎯 **User Experience**
+👉 **Responsive Design**: Seamless experience across desktop, tablet, and mobile devices
+
+👉 **Smooth Animations**: Framer Motion animations for fluid transitions between customization options
+
+👉 **Real-time Preview**: Instant visual feedback as you customize your t-shirt
+
+and many more advanced features for a complete customization experience 
 
 ## <a name="quick-start">🤸 Quick Start</a>
 

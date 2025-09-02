@@ -11,8 +11,8 @@
     <img src="https://img.shields.io/badge/Responsive-–-0A0A0A?style=for-the-badge" alt="Responsive" />
   </div>
 
-  <h3 align="center">Houzzy — Modern Furniture Storefront</h3>
-  <p align="center">Responsive catalog page with filters, product cards, and a “recently viewed” section.</p>
+  <h3 align="center">Houzzy — Furniture E-commerce Store</h3>
+  <p align="center">Complete furniture e-commerce platform with shopping cart, advanced filters, product search, and recently viewed items.</p>
 </div>
 
 ## Table of Contents
@@ -26,17 +26,18 @@
 
 ## Introduction
 
-Houzzy is a static, responsive e‑commerce layout focused on clarity and usability. It demonstrates product catalog UI patterns: filters, rich product cards, breadcrumbs, custom checkboxes/inputs, and a “recently viewed” carousel.
+Houzzy is a comprehensive furniture e-commerce platform featuring a complete shopping experience. It includes product catalog with advanced filtering, shopping cart functionality, product search capabilities, detailed product cards, and a "recently viewed" items section for enhanced user experience.
 
 ## Features
 
-- Mobile‑first responsive design (360 / 768 / 1920)
-- Product catalog and filter controls
-- Detailed product cards and CTA buttons
-- Recently viewed items section
-- Breadcrumbs for navigation
-- Custom form elements and checkboxes
-- Optimized images (retina @2x where needed)
+- **E-commerce Functionality**: Complete shopping cart system with add/remove items
+- **Advanced Filtering**: Filter products by category, price range, brand, and specifications
+- **Product Search**: Real-time search functionality with autocomplete suggestions
+- **Product Catalog**: Comprehensive furniture catalog with detailed product information
+- **Recently Viewed**: Smart tracking of recently viewed items for better UX
+- **Responsive Design**: Mobile-first approach (360px / 768px / 1920px breakpoints)
+- **User Interface**: Breadcrumbs, custom form elements, and optimized product cards
+- **Performance**: Optimized images with retina support and lazy loading
 
 ## Tech Stack
 

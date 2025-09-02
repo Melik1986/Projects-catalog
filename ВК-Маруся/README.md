@@ -14,8 +14,8 @@
     <img src="https://img.shields.io/badge/Jest-30-C21325?style=for-the-badge&logo=jest&logoColor=white" alt="Jest" />
   </div>
 
-  <h3 align="center">VK React Project — Modern TS App</h3>
-  <p align="center">A TypeScript React app with Redux Toolkit, Router, Jest tests, PWA support, and Vite build.</p>
+  <h3 align="center">VK Marusya — Online Cinema Platform</h3>
+  <p align="center">A modern TypeScript React application for watching movies and trailers with genre filtering, search functionality, and user authentication.</p>
 </div>
 
 ## Table of Contents
@@ -30,19 +30,26 @@
 
 ## Introduction
 
-This project is a modern React + TypeScript application prepared for production: strict linting and formatting, unit tests with Jest, PWA configuration, and optimized builds via Vite. It’s suitable for complex feature work and clean architecture.
+VK Marusya is a comprehensive online cinema platform built with modern React and TypeScript. It provides users with the ability to browse movies, watch trailers, search for films by title, filter by genres, manage favorites, and authenticate securely. The application features a clean, responsive design with advanced functionality for an optimal movie-watching experience.
 
 ## Features
 
-- TypeScript-first setup with aliases (vite-tsconfig-paths)
-- State management with Redux Toolkit + React Redux
-- Routing with React Router 6
-- API calls with Axios and `qs`
-- Form validation with Zod + `@hookform/resolvers` (ready)
-- PWA support using `vite-plugin-pwa`
-- Bundle compression and analysis scripts
-- Jest unit tests with jsdom environment
-- Prettier + ESLint config for consistent code style
+### 🎬 **Cinema Functionality**
+- **Movie Catalog**: Browse extensive collection of movies with detailed information
+- **Trailer Playback**: Watch movie trailers with integrated YouTube player
+- **Genre Filtering**: Filter movies by multiple genres (drama, comedy, thriller, etc.)
+- **Advanced Search**: Real-time search with debounced input and autocomplete
+- **Favorites System**: Add/remove movies to personal favorites list
+- **User Authentication**: Secure login and registration system
+
+### 🛠 **Technical Features**
+- **TypeScript**: Full type safety with strict configuration
+- **State Management**: Redux Toolkit for complex state handling
+- **Routing**: React Router 6 with protected routes
+- **API Integration**: Axios-based API with error handling
+- **PWA Support**: Progressive Web App capabilities
+- **Testing**: Jest unit tests with comprehensive coverage
+- **Performance**: Optimized builds with Vite and bundle analysis
 
 ## Tech Stack
 

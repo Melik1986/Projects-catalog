@@ -11,8 +11,8 @@
       <img src="https://img.shields.io/badge/Vanilla_JS-ES6-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
    </div>
 
-   <h3 align="center">Sushi — Simple Landing</h3>
-   <p align="center">A lightweight static landing for a Japanese food menu built with Vite and simple CSS + AOS animations.</p>
+   <h3 align="center">Sushi — Japanese Restaurant & Delivery</h3>
+   <p align="center">A modern Japanese restaurant website with sushi delivery service, interactive menu, and online ordering system built with Vite and AOS animations.</p>
 </div>
 
 ## Table of Contents
@@ -27,15 +27,27 @@
 
 ## Introduction
 
-Sushi is a minimal, static landing page showcasing Japanese food items. It's organized as plain HTML/CSS with a small JS file for UI behaviors and AOS for scroll animations. The project is ideal for portfolio demos or a quick marketing page for a restaurant.
+Sushi is a comprehensive Japanese restaurant website featuring a complete delivery service platform. The site includes an interactive menu system, online ordering capabilities, delivery information, and modern UI with smooth animations. Built with Vite for fast development and AOS for engaging scroll animations, it provides customers with an intuitive way to browse sushi options and place delivery orders.
 
 ## Features
 
-- Hero section with prominent illustration and CTA
-- Popular food cards with simple filter pills
-- Trending/feature sections and subscribe block
-- Lightweight animations using AOS
-- Modular CSS per section for easy styling
+### 🍣 **Restaurant & Delivery Features**
+- **Interactive Menu**: Browse sushi and Japanese dishes with detailed descriptions and pricing
+- **Delivery Service**: Complete delivery information with ordering capabilities
+- **Popular Items**: Featured sushi rolls and trending dishes with filter options
+- **Online Ordering**: Streamlined ordering system for delivery and pickup
+
+### 🎨 **User Experience**
+- **Hero Section**: Eye-catching presentation with call-to-action for ordering
+- **Food Categories**: Organized menu sections with filter pills for easy navigation
+- **Trending Section**: Highlighted popular and seasonal items
+- **Subscribe Block**: Newsletter signup for promotions and updates
+
+### 🛠 **Technical Features**
+- **Smooth Animations**: AOS scroll animations for engaging user experience
+- **Responsive Design**: Mobile-first approach for optimal viewing on all devices
+- **Fast Loading**: Vite-powered development with optimized performance
+- **Modular CSS**: Organized styling per section for easy maintenance
 
 ## Tech Stack
 

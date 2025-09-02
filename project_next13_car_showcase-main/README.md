@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
   </div>
 
-  <h3 align="center">A Car Showcase Website</h3>
+  <h3 align="center">Car Marketplace — Buy & Rent Platform</h3>
 
    <div align="center">
      Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
@@ -38,7 +38,7 @@ If you prefer visual learning, this is the perfect resource for you. Follow our 
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Developed with Next.js and leveraging its server-side rendering capabilities, the Car Showcase website presents various car types, showcasing comprehensive information in a well-designed format with advanced filtering and pagination support for an enhanced user experience.
+A comprehensive car marketplace platform built with Next.js, featuring both car sales and rental services. The application provides users with an extensive catalog of vehicles, advanced filtering options, detailed car information, and seamless browsing experience with server-side rendering for optimal performance.
 
 If you're getting started and need assistance or face any bugs, join our active Discord community with over 27k+ members. It's a place where people help each other out.
 
@@ -52,21 +52,36 @@ If you're getting started and need assistance or face any bugs, join our active 
 
 ## <a name="features">🔋 Features</a>
 
-👉 **Home Page**: Showcases a visually appealing display of cars fetched from a third-party API, providing a captivating introduction to the diverse range of vehicles available.
+### 🚗 **Car Marketplace Functionality**
+👉 **Car Sales & Rentals**: Complete marketplace for both buying and renting vehicles with detailed pricing information
 
-👉 **Exploration and Filtering**: Explore a wide variety of cars from around the world, utilizing a search and filter system based on criteria such as model, manufacturer, year, fuel type, and make.
+👉 **Advanced Search & Filtering**: Comprehensive filtering system by manufacturer, model, year, fuel type, and price range
 
-👉 **Transition to Server-Side Rendering**: A seamless transition from client-side rendering to server-side rendering, enhancing performance and providing a smoother browsing experience.
+👉 **Car Catalog**: Extensive database of vehicles with high-quality images and detailed specifications
 
-👉 **Pagination**: For easy navigation through a large dataset of cars, allowing users to explore multiple pages effortlessly.
+👉 **Price Display**: Clear pricing information for both purchase and rental options with daily rates
 
-👉 **Metadata Optimization and SEO**: Optimize metadata for car listing, enhancing search engine optimization (SEO) and ensuring better visibility on search engine results pages.
+### 🔍 **Search & Discovery**
+👉 **Smart Search**: Real-time search functionality with autocomplete for manufacturers and models
 
-👉 **TypeScript Types**: Utilize TypeScript to provide robust typing for enhanced code quality and better development
+👉 **Filter System**: Multi-criteria filtering including fuel type (Gas/Electricity), year, and manufacturer
 
-👉 **Responsive Website Design**: The website is designed to be visually pleasing and responsive, ensuring an optimal user experience across various devices.
+👉 **Pagination**: Efficient navigation through large datasets of available vehicles
 
-and many more, including code architecture and reusability 
+👉 **Car Details**: Detailed vehicle information including specifications, features, and pricing
+
+### 🛠 **Technical Features**
+👉 **Server-Side Rendering**: Next.js SSR for optimal performance and SEO
+
+👉 **TypeScript Integration**: Full type safety for enhanced code quality and development experience
+
+👉 **Responsive Design**: Mobile-first approach ensuring optimal experience across all devices
+
+👉 **API Integration**: Seamless integration with car data APIs for real-time information
+
+👉 **SEO Optimization**: Optimized metadata and structure for better search engine visibility
+
+and many more features for a complete car marketplace experience 
 
 ## <a name="quick-start">🤸 Quick Start</a>
 

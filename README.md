@@ -32,14 +32,14 @@ Each project includes detailed documentation with technical analysis, architectu
 ### 🏢 **Corporate & Business Sites**
 - `otis-valen/` - Multi-page portfolio with GSAP animations and Lenis smooth scrolling
 - `Gazprom/` - Corporate website with SCSS architecture and responsive design
-- `Houzzy/` - Real estate catalog with modern UI and interactive elements
+- `Houzzy/` - Furniture e-commerce store with shopping cart, filters, and product search
 
 ### 🍽️ **Specialized Applications**
-- `sushi/` - Restaurant website with interactive menu and modern design
+- `sushi/` - Japanese restaurant website with sushi delivery service and interactive menu
 - `terrene/` - Creative agency portfolio with advanced animations
-- `project_next13_car_showcase-main/` - Next.js car showcase with 3D elements
-- `project_threejs_ai-3D/` - Three.js 3D application with AI integration
-- `ВК-Маруся/` - VK Marusya voice assistant interface
+- `project_next13_car_showcase-main/` - Next.js car marketplace for buying and renting vehicles with advanced filtering
+- `project_threejs_ai-3D/` - AI-powered 3D t-shirt customization app with custom print generation and color selection
+- `ВК-Маруся/` - Online cinema for watching trailers and movies with genre filters and movie search
 
 ## 🛠 **Technology Stack Overview**
 
