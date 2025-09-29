@@ -30,7 +30,10 @@ const FavoritesListComponent: React.FC<FavoritesListProps> = ({ openAuthModal })
   );
 
   const sortedMovies = useMemo(() => {
-    return [...(favoriteMovies || [])].sort((a, b) => a.title.localeCompare(b.title));
+    if (!favoriteMovies || !Array.isArray(favoriteMovies)) {
+      return [];
+    }
+    return [...favoriteMovies].sort((a, b) => a.title.localeCompare(b.title));
   }, [favoriteMovies]);
 
   if (isLoading) {

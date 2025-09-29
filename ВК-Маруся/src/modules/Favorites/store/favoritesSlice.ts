@@ -135,7 +135,7 @@ export const {
   updateFavoritesByMovieId,
 } = favoritesSlice.actions;
 
-export const selectFavoriteItems = (state: RootState): Movie[] => state.favorites.items;
+export const selectFavoriteItems = (state: RootState): Movie[] => state.favorites.items || [];
 
 export const selectFavoritesLoading = (state: RootState): boolean => state.favorites.isLoading;
 
@@ -152,9 +152,9 @@ export const selectFavoriteMovieIds = createSelector(
 export const selectIsFavorite =
   (movieId: string) =>
   (state: RootState): boolean =>
-    state.favorites.items.some((item: Movie) => item?.id && item.id.toString() === movieId);
+    (state.favorites.items || []).some((item: Movie) => item?.id && item.id.toString() === movieId);
 
-export const selectFavoritesCount = (state: RootState): number => state.favorites.items.length;
+export const selectFavoritesCount = (state: RootState): number => (state.favorites.items || []).length;
 
 // Мемоизированный селектор для быстрого поиска
 export const selectFavoriteIdsSet = createSelector(

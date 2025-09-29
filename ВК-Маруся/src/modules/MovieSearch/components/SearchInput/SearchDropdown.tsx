@@ -12,7 +12,7 @@ interface SearchDropdownProps {
 
 export const SearchDropdown: React.FC<SearchDropdownProps> = React.memo(
   ({ movies, onItemClick, isVisible }) => {
-    if (!isVisible || movies.length === 0) {
+    if (!isVisible || !movies || movies.length === 0) {
       return null;
     }
 

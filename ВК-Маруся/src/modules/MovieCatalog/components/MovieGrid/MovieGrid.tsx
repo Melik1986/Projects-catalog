@@ -36,7 +36,7 @@ export const MovieGrid = React.memo<MovieGridProps>(
     );
 
     const displayedMovies =
-      maxItems && movies.length > maxItems ? movies.slice(0, maxItems) : movies;
+      maxItems && movies && movies.length > maxItems ? movies.slice(0, maxItems) : movies;
 
     if (!movies || movies.length === 0) {
       return (

@@ -236,13 +236,13 @@ export const { clearCurrentMovie, clearRandomMovie, setSearchParams, clearMovies
   moviesSlice.actions;
 
 // Селекторы
-export const selectMovies = (state: RootState): Movie[] => state.movies.movies;
+export const selectMovies = (state: RootState): Movie[] => state.movies.movies || [];
 
 export const selectCurrentMovie = (state: RootState): Movie | null => state.movies.currentMovie;
 
 export const selectRandomMovie = (state: RootState): Movie | null => state.movies.randomMovie;
 
-export const selectTopMovies = (state: RootState): Movie[] => state.movies.topMovies;
+export const selectTopMovies = (state: RootState): Movie[] => state.movies.topMovies || [];
 
 export const selectMoviesLoading = (state: RootState): boolean => state.movies.isLoading;
 

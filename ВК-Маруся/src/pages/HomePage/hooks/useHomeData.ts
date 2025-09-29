@@ -37,7 +37,7 @@ export const useHomeData = (): {
   }, [loadData, isInitialized]);
 
   useEffect(() => {
-    if (topMovies.length > 0 && !currentMovie) {
+    if (topMovies && Array.isArray(topMovies) && topMovies.length > 0 && !currentMovie) {
       const randomIndex = Math.floor(Math.random() * topMovies.length);
       const selectedMovie = topMovies[randomIndex];
       if (selectedMovie) {
@@ -55,7 +55,7 @@ export const useHomeData = (): {
   }, [dispatch, showError]);
 
   return {
-    movies: topMovies,
+    movies: topMovies || [],
     currentMovie,
     loading: isLoadingTop,
     handleRetry,
