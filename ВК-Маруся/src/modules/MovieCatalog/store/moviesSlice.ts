@@ -159,8 +159,8 @@ const moviesSlice = createSlice({
       })
       .addCase(fetchMovies.fulfilled, (state, action): void => {
         state.isLoading = false;
-        state.movies = action.payload;
-        state.totalCount = (action.payload || []).length;
+        state.movies = Array.isArray(action.payload) ? action.payload : [];
+        state.totalCount = Array.isArray(action.payload) ? action.payload.length : 0;
       })
       .addCase(fetchMovies.rejected, (state): void => {
         state.isLoading = false;
@@ -182,7 +182,7 @@ const moviesSlice = createSlice({
       })
       .addCase(fetchRandomMovie.fulfilled, (state, action): void => {
         state.isLoadingRandom = false;
-        state.randomMovie = action.payload;
+        state.randomMovie = action.payload && typeof action.payload === 'object' && !Array.isArray(action.payload) ? action.payload : null;
       })
       .addCase(fetchRandomMovie.rejected, (state): void => {
         state.isLoadingRandom = false;
@@ -193,7 +193,7 @@ const moviesSlice = createSlice({
       })
       .addCase(fetchTopMovies.fulfilled, (state, action): void => {
         state.isLoadingTop = false;
-        state.topMovies = action.payload;
+        state.topMovies = Array.isArray(action.payload) ? action.payload : [];
       })
       .addCase(fetchTopMovies.rejected, (state): void => {
         state.isLoadingTop = false;

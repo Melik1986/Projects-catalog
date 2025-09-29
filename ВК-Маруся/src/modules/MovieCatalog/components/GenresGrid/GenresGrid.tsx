@@ -18,7 +18,7 @@ export const GenresGrid: React.FC<GenresGridProps> = ({ genres, loading = false 
 
   return (
     <div className={styles.genres__grid}>
-      {genres.map((genre) => (
+      {(genres || []).map((genre) => (
         <div key={genre} data-genre-card>
           <GenreCard genre={genre} />
         </div>
