@@ -48,7 +48,19 @@
 npm run build:no-pwa
 ```
 
-### 6. Build Warnings (Non-Critical)
+### 6. Production Runtime Errors
+**Проблема**: `Uncaught SyntaxError: Unexpected token '<'` и `Cannot access 'M' before initialization`
+
+**Решение**:
+- Упрощена конфигурация `vercel.json` - убраны сложные headers
+- Исправлена циклическая зависимость в `authSlice.ts`
+- Используется простой rewrite pattern для SPA
+
+**Корневая причина**:
+- Vercel неправильно обслуживал JavaScript файлы как HTML
+- Циклические зависимости между Redux слайсами
+
+### 7. Build Warnings (Non-Critical)
 
 **Предупреждения, которые можно игнорировать**:
 - `WARN! Due to builds existing` - нормально при использовании `vercel.json`
@@ -58,7 +70,7 @@ npm run build:no-pwa
 **Исправлено**:
 - Удален `@types/axios` (axios имеет встроенные типы)
 
-### 7. Build Optimization
+### 8. Build Optimization
 
 **Текущие настройки**:
 - Terser minification с безопасными опциями

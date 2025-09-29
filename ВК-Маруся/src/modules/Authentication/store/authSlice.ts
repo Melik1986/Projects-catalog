@@ -88,9 +88,8 @@ export const logoutUser = createAsyncThunk<SuccessfulResult, void>(
   'auth/logout',
   async (_, { dispatch }) => {
     const result = await AuthAPI.logout();
-    // Очищаем избранное при выходе
-    const { clearFavorites } = await import('../../Favorites/store/favoritesSlice');
-    dispatch(clearFavorites());
+    // Очищаем избранное при выходе через action type вместо прямого импорта
+    dispatch({ type: 'favorites/clearFavorites' });
     return result;
   },
 );
