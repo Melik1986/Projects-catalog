@@ -22,14 +22,11 @@ export default defineConfig({
     target: 'es2015',
     minify: 'terser',
     outDir: 'dist',
+    assetsDir: 'assets',
     sourcemap: false,
     rollupOptions: {
       output: {
-        manualChunks: (id) => {
-          if (id.includes('node_modules')) {
-            return 'vendor';
-          }
-        },
+        manualChunks: undefined,
       },
     },
   },

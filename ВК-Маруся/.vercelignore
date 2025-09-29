@@ -7,7 +7,7 @@ __tests__
 *.spec.ts
 *.spec.tsx
 
-# Build artifacts that shouldn't be deployed
+# Build artifacts
 dev-dist
 tsconfig.tsbuildinfo
 *.log
@@ -16,29 +16,23 @@ tsconfig.tsbuildinfo
 babel.config.js
 jest.config.js
 eslint.config.js
-.prettierrc
-.editorconfig
 
 # Git files
 .git
 .gitignore
-.gitkeep
 
 # IDE files
 .DS_Store
 .vscode
 .idea
 
-# Environment files (should be set in Vercel dashboard)
+# Environment files
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# Package manager files (keep package-lock.json for consistent builds)
+# Package manager files
 yarn.lock
 pnpm-lock.yaml
-
-# Keep TypeScript config for build process
-# tsconfig.json
