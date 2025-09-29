@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <ul className={styles.socials}>
-          {socialLinks.map((link) => (
+          {(socialLinks || []).map((link) => (
             <li key={link.icon}>
               <a
                 href={link.href}

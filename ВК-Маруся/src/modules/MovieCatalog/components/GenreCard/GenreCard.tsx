@@ -10,7 +10,7 @@ export interface GenreCardProps {
 
 export const GenreCard: React.FC<GenreCardProps> = ({ genre }) => {
   const displayName = translateGenre(genre);
-  const image = GENRE_IMAGES[genre as keyof typeof GENRE_IMAGES] || GENRE_IMAGES.drama;
+  const image = (GENRE_IMAGES && GENRE_IMAGES[genre as keyof typeof GENRE_IMAGES]) || (GENRE_IMAGES && GENRE_IMAGES.drama) || '';
 
   return (
     <Link

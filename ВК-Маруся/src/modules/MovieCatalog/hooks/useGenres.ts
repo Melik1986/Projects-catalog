@@ -7,7 +7,7 @@ import type { Genre } from '../../../shared/types';
  */
 export const useGenres = (): { genres: Genre[]; loading: boolean } => {
   // Преобразуем массив строк в массив объектов с названием и изображением
-  const genres: Genre[] = [...ALLOWED_GENRES];
+  const genres: Genre[] = [...(ALLOWED_GENRES || [])];
 
   // Всегда возвращаем false для loading, так как данные статичные
   const loading = false;
