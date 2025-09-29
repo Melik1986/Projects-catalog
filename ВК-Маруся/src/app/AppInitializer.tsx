@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { checkAuthStatus } from '@/modules/Authentication/store/authSlice';
 import { fetchFavorites } from '@/modules/Favorites/store/favoritesSlice';
 import type { RootState } from '@/app/store';
-import { useAppDispatch } from '@/app/store';
+import { useAppDispatch } from '@/shared/lib/store';
 import { useErrorHandler } from '@/shared/lib/errors/hooks/useErrorHandler';
 
 import LoadingSpinner from '@/shared/ui/LoadingSpinner/LoadingSpinner';

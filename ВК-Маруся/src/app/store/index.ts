@@ -31,5 +31,3 @@ export type AppDispatch = typeof store.dispatch;
 // Экспорт для использования в компонентах
 export default store;
 
-// Реэкспорт хуков из shared/lib/store
-export { useAppDispatch, useAppSelector } from '@/shared/lib/store';

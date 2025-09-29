@@ -2,7 +2,7 @@ import React from 'react';
 import AppRouter from './providers/routes/AppRouter';
 import ErrorBoundary from '@/shared/lib/errors/ErrorBoundary/ErrorBoundary';
 import { ErrorDisplay } from '@/shared/lib/errors';
-import { useAppSelector, useAppDispatch } from './store';
+import { useAppSelector, useAppDispatch } from '@/shared/lib/store';
 import { selectGlobalError, clearGlobalError } from '@/shared/lib/errors/slices/errorSlice';
 import { useGlobalErrorTimer } from '@/shared/lib/errors/hooks/useGlobalErrorTimer';
 import AppInitializer from './AppInitializer';
