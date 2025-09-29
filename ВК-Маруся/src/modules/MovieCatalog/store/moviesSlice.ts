@@ -204,7 +204,7 @@ const moviesSlice = createSlice({
       })
       .addCase(fetchGenres.fulfilled, (state, action): void => {
         state.isLoadingGenres = false;
-        state.genres = action.payload;
+        state.genres = Array.isArray(action.payload) ? action.payload : [];
       })
       .addCase(fetchGenres.rejected, (state): void => {
         state.isLoadingGenres = false;
