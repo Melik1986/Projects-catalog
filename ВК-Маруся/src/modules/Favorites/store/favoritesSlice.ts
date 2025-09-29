@@ -77,7 +77,7 @@ const favoritesSlice = createSlice({
       state.lastUpdated = new Date().toISOString();
     },
     updateFavoritesByMovieId: (state, action: PayloadAction<string[]>): void => {
-      state.items = state.items.filter((item) => action.payload.includes(item.id.toString()));
+      state.items = state.items.filter((item) => item?.id && action.payload.includes(item.id.toString()));
       state.lastUpdated = new Date().toISOString();
     },
   },
@@ -146,13 +146,13 @@ export const selectFavoritesLastUpdated = (state: RootState): string | null =>
 
 export const selectFavoriteMovieIds = createSelector(
   [selectFavoriteItems],
-  (items: Movie[]): string[] => items.filter((item) => item?.id).map((item) => item.id.toString()),
+  (items: Movie[]): string[] => items.filter((item) => item?.id).map((item) => item.id?.toString() || ''),
 );
 
 export const selectIsFavorite =
   (movieId: string) =>
   (state: RootState): boolean =>
-    (state.favorites.items || []).some((item: Movie) => item?.id && item.id.toString() === movieId);
+    (state.favorites.items || []).some((item: Movie) => item?.id && item.id?.toString() === movieId);
 
 export const selectFavoritesCount = (state: RootState): number => (state.favorites.items || []).length;
 

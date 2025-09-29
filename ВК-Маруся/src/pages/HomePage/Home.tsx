@@ -71,7 +71,7 @@ const Home: React.FC = () => {
             }}
             actions={{
               onTrailerClick: handleWatchTrailer,
-              onInfoClick: () => navigateToMovie(randomMovie.id.toString()),
+              onInfoClick: () => navigateToMovie(randomMovie.id?.toString() || ''),
               onRefreshClick: pickRandomMovie,
             }}
             movie={randomMovie}

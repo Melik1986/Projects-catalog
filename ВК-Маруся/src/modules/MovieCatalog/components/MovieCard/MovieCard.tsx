@@ -60,9 +60,9 @@ const MovieCardComponent: React.FC<MovieCardProps> = ({
       }
       const isCurrentlyFavorite = favoriteIdsSet.has(movie.id);
       if (isCurrentlyFavorite) {
-        await dispatch(removeFromFavorites(movie.id.toString()));
+        await dispatch(removeFromFavorites(movie.id?.toString() || ''));
       } else {
-        await dispatch(addToFavorites(movie.id.toString()));
+        await dispatch(addToFavorites(movie.id?.toString() || ''));
       }
     },
     [dispatch, isAuthenticated, openAuthModal, favoriteIdsSet, movie],

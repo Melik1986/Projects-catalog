@@ -33,7 +33,7 @@ export const useFavoriteActions = (
 
   const isFavorite = useCallback(
     (movieId: number): boolean => {
-      return favoriteIds.includes(movieId.toString());
+      return favoriteIds.includes(movieId?.toString() || '');
     },
     [favoriteIds],
   );
@@ -44,7 +44,7 @@ export const useFavoriteActions = (
       return;
     }
     try {
-      await dispatch(addToFavoritesThunk(movie.id.toString())).unwrap();
+      await dispatch(addToFavoritesThunk(movie.id?.toString() || '')).unwrap();
       dispatch(fetchFavorites());
     } catch (error) {
       console.error('Ошибка при добавлении в избранное:', error);
@@ -57,7 +57,7 @@ export const useFavoriteActions = (
       return;
     }
     try {
-      await dispatch(removeFromFavoritesThunk(movieId.toString())).unwrap();
+      await dispatch(removeFromFavoritesThunk(movieId?.toString() || '')).unwrap();
       dispatch(removeFavoriteOptimistic(movieId));
     } catch (error) {
       console.error('Ошибка при удалении из избранного:', error);
