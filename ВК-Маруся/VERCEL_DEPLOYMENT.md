@@ -33,7 +33,32 @@
 - Добавлены `sw.js` и `workbox-*.js` в `globIgnores`
 - Это предотвращает попытки кэшировать Service Worker файлы
 
-### 5. Build Optimization
+### 5. Large Image Files Error
+**Проблема**: `vk3.png is 1.8 MB, and won't be precached`
+
+**Решение**:
+- Добавлены `**/vk*.png` в `globIgnores` для исключения больших изображений
+- Настроен runtime caching для VK изображений
+- Возвращен стандартный лимит `maximumFileSizeToCacheInBytes: 2MB`
+
+**Альтернативное решение**:
+Если PWA продолжает вызывать проблемы, используйте сборку без PWA:
+```bash
+# В Vercel Dashboard измените Build Command на:
+npm run build:no-pwa
+```
+
+### 6. Build Warnings (Non-Critical)
+
+**Предупреждения, которые можно игнорировать**:
+- `WARN! Due to builds existing` - нормально при использовании `vercel.json`
+- `npm warn deprecated` - устаревшие зависимости, но работают
+- `Warning: Failed to fetch git submodules` - ложное срабатывание
+
+**Исправлено**:
+- Удален `@types/axios` (axios имеет встроенные типы)
+
+### 7. Build Optimization
 
 **Текущие настройки**:
 - Terser minification с безопасными опциями

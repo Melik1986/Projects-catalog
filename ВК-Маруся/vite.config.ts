@@ -169,8 +169,8 @@ export default defineConfig({
       includeAssets: ['favicon.ico', 'apple-touch-icon.png'],
       injectManifest: {
         globPatterns: ['**/*.{js,css,html,ico,png,webp}'],
-        globIgnores: ['**/sprite.svg', '**/stats.html', '**/*.gz', '**/*.br', 'sw.js', 'workbox-*.js'],
-        maximumFileSizeToCacheInBytes: 1.5 * 1024 * 1024, // Снижаем лимит до 1.5MB
+        globIgnores: ['**/sprite.svg', '**/stats.html', '**/*.gz', '**/*.br', 'sw.js', 'workbox-*.js', '**/vk*.png'],
+        maximumFileSizeToCacheInBytes: 2 * 1024 * 1024, // Возвращаем стандартный лимит 2MB
       },
       devOptions: {
         enabled: true,
@@ -178,8 +178,8 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,webp}'],
-        globIgnores: ['**/sprite.svg', '**/stats.html', '**/*.gz', '**/*.br', 'sw.js', 'workbox-*.js'],
-        maximumFileSizeToCacheInBytes: 1.5 * 1024 * 1024, // Снижаем лимит до 1.5MB
+        globIgnores: ['**/sprite.svg', '**/stats.html', '**/*.gz', '**/*.br', 'sw.js', 'workbox-*.js', '**/vk*.png'],
+        maximumFileSizeToCacheInBytes: 2 * 1024 * 1024, // Возвращаем стандартный лимит 2MB
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/cinemaguide\.skillbox\.cc\/.*\.(jpg|jpeg|png|webp)$/,
@@ -189,6 +189,17 @@ export default defineConfig({
               expiration: {
                 maxEntries: 100,
                 maxAgeSeconds: 30 * 24 * 60 * 60, // 30 дней
+              },
+            },
+          },
+          {
+            urlPattern: /\/vk.*\.png$/,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'vk-images',
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 365 * 24 * 60 * 60, // 1 год
               },
             },
           },
