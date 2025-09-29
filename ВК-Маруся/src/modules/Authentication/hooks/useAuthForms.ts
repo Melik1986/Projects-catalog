@@ -14,7 +14,7 @@ import {
 } from '@/shared/lib/validation';
 import { useErrorHandler } from '@/shared/lib/errors';
 import type { AuthInfo, RegisterData } from '@/shared/types';
-import type { AppDispatch } from '@/shared/lib/store';
+import type { AppDispatch } from '@/app/store';
 
 // Хук для формы входа
 export const useLoginForm = (): UseFormReturn<LoginFormInputs> => {

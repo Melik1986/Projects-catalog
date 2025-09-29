@@ -52,13 +52,15 @@ npm run build:no-pwa
 **Проблема**: `Uncaught SyntaxError: Unexpected token '<'` и `Cannot access 'M' before initialization`
 
 **Решение**:
-- Упрощена конфигурация `vercel.json` - убраны сложные headers
-- Исправлена циклическая зависимость в `authSlice.ts`
-- Используется простой rewrite pattern для SPA
+- Исправлена конфигурация `vercel.json` с правильными headers для assets
+- Устранены циклические зависимости в Redux слайсах
+- Добавлен `base: '/'` в `vite.config.ts`
+- Изменены импорты `RootState` с `@/shared/lib/store` на `@/app/store`
 
 **Корневая причина**:
-- Vercel неправильно обслуживал JavaScript файлы как HTML
-- Циклические зависимости между Redux слайсами
+- Циклическая зависимость: слайсы → shared/lib/store → app/store → слайсы
+- Vercel неправильно обслуживал статические файлы
+- CSS файлы не загружались из-за неправильных путей
 
 ### 7. Build Warnings (Non-Critical)
 

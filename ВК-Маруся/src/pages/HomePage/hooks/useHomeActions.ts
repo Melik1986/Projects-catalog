@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { fetchRandomMovie, clearRandomMovie } from '@/modules/MovieCatalog/store/moviesSlice';
 import { useErrorHandler } from '@/shared/lib/errors/hooks/useErrorHandler';
 import { useAppDispatch } from '@/shared/lib/store';
-import type { RootState } from '@/shared/lib/store';
+import type { RootState } from '@/app/store';
 import type { Movie } from '@/shared/types';
 
 export const useHomeActions = (): {

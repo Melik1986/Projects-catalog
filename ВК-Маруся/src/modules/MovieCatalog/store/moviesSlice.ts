@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 import { movieApi } from '@/modules/MovieCatalog';
-import type { RootState } from '@/shared/lib/store';
+import type { RootState } from '@/app/store';
 
 import type { Movie, MovieSearchParams, Genre } from '@/shared/types';
 

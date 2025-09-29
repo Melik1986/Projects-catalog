@@ -3,7 +3,7 @@ import { AuthAPI } from '../api/auth.api';
 import { getAxiosErrorMessage } from '@/shared/lib/errors/utils/apiErrorHandler';
 import type { AuthInfo, RegisterData, SuccessfulResult, UserProfile } from '@/shared/types';
 import type { AxiosError } from 'axios';
-import type { RootState } from '@/shared/lib/store';
+import type { RootState } from '@/app/store';
 
 interface AuthState {
   isAuthenticated: boolean;

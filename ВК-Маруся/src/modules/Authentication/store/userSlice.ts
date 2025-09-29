@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk, createSelector } from '@reduxjs/toolkit';
 import type { PayloadAction, AnyAction } from '@reduxjs/toolkit';
 import { AuthAPI } from '../api/auth.api';
-import type { RootState } from '@/shared/lib/store';
+import type { RootState } from '@/app/store';
 
 import type { UserProfile } from '@/shared/types';
 

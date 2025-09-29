@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 import type { GlobalError } from '@/shared/types/errors';
-import type { RootState } from '@/shared/lib/store';
+import type { RootState } from '@/app/store';
 
 interface ErrorState {
   globalError: GlobalError | null;

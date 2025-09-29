@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk, createSelector } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit';
 import { favoritesApi } from '@/modules/Favorites';
 import type { Movie, UserProfile } from '@/shared/types';
-import type { RootState } from '@/shared/lib/store';
+import type { RootState } from '@/app/store';
 import { toGlobalError } from '@/shared/lib/errors/utils/apiErrorHandler';
 
 interface FavoritesState {
