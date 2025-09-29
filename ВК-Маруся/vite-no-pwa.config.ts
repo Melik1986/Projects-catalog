@@ -26,32 +26,20 @@ export default defineConfig({
     sourcemap: false,
     rollupOptions: {
       output: {
-        manualChunks: undefined,
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash].[ext]',
       },
     },
   },
 
   optimizeDeps: {
     include: [
-      'prop-types',
-      'fast-deep-equal/es6',
-      'react-youtube',
       'react',
       'react-dom',
       'react-router-dom',
       '@reduxjs/toolkit',
-      'axios'
     ],
-    exclude: [
-      '@vite/client', 
-      '@react-refresh/runtime'
-    ],
-  },
-
-  server: {
-    warmup: {
-      clientFiles: ['./src/main.tsx', './src/app/App.tsx', './src/shared/ui/index.ts'],
-    },
   },
 
   plugins: [
@@ -63,26 +51,5 @@ export default defineConfig({
       },
     }),
     tsconfigPaths(),
-    viteCompression({
-      algorithm: 'gzip',
-      ext: '.gz',
-      threshold: 1024,
-      deleteOriginFile: false,
-      filter: /\.(js|css|html|txt|xml|json)$/,
-    }),
-    viteCompression({
-      algorithm: 'brotliCompress',
-      ext: '.br',
-      threshold: 1024,
-      deleteOriginFile: false,
-      filter: /\.(js|css|html|txt|xml|json)$/,
-    }),
-    visualizer({
-      filename: 'dist/stats.html',
-      open: false,
-      gzipSize: true,
-      brotliSize: true,
-      template: 'treemap',
-    }) as any,
   ],
 });
