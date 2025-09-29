@@ -46,7 +46,7 @@ export const useGenreMovies = (): UseGenreMoviesResult => {
   const [lastPageSize, setLastPageSize] = useState<number>(API_LIMITS.ITEMS_PER_PAGE);
   const hasMoreMovies = useMemo(() => {
     // Если нет фильмов, можем загружать
-    if (movies.length === 0) {
+    if (!movies || movies.length === 0) {
       return true;
     }
 
@@ -64,7 +64,7 @@ export const useGenreMovies = (): UseGenreMoviesResult => {
     // и последняя страница была полной, можем продолжать
     const canLoadMore = lastPageSize === API_LIMITS.ITEMS_PER_PAGE;
     return canLoadMore;
-  }, [movies.length, lastPageSize, currentPage]);
+  }, [movies, lastPageSize, currentPage]);
 
   const loadMovies = useCallback(
     async (genre: string, page: number = 1): Promise<void> => {

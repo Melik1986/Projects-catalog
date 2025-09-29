@@ -12,10 +12,10 @@ const Genres: React.FC = () => {
 
   // Загружаем жанры только при заходе на страницу жанров
   useEffect(() => {
-    if (genres.length === 0) {
+    if (!genres || genres.length === 0) {
       dispatch(fetchGenres('ru'));
     }
-  }, [dispatch, genres.length]);
+  }, [dispatch, genres]);
 
   if (loading) {
     return <LoadingSpinner size="large" text="Загрузка жанров..." />;

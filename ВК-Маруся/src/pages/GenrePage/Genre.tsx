@@ -80,7 +80,7 @@ const Genre: React.FC = () => {
     );
   }
 
-  if (loading && movies.length === 0) {
+  if (loading && (!movies || movies.length === 0)) {
     return (
       <main className={styles.genre}>
         <div className={styles.genre__header}>

@@ -12,6 +12,10 @@ export const GenresGrid: React.FC<GenresGridProps> = ({ genres, loading = false 
     return <div className={styles.loading}>Загрузка жанров...</div>;
   }
 
+  if (!genres || !Array.isArray(genres) || genres.length === 0) {
+    return <div className={styles.loading}>Жанры не найдены</div>;
+  }
+
   return (
     <div className={styles.genres__grid}>
       {genres.map((genre) => (

@@ -160,7 +160,7 @@ const moviesSlice = createSlice({
       .addCase(fetchMovies.fulfilled, (state, action): void => {
         state.isLoading = false;
         state.movies = action.payload;
-        state.totalCount = action.payload.length;
+        state.totalCount = (action.payload || []).length;
       })
       .addCase(fetchMovies.rejected, (state): void => {
         state.isLoading = false;
@@ -219,11 +219,11 @@ const moviesSlice = createSlice({
           state.movies = action.payload;
         } else {
           // Фильтруем новые фильмы, исключая дубликаты по ID
-          const existingIds = new Set(state.movies.map((movie) => movie.id));
+          const existingIds = new Set((state.movies || []).map((movie) => movie.id));
           const newMovies = action.payload.filter((movie) => !existingIds.has(movie.id));
-          state.movies = [...state.movies, ...newMovies];
+          state.movies = [...(state.movies || []), ...newMovies];
         }
-        state.totalCount = state.movies.length;
+        state.totalCount = (state.movies || []).length;
       })
       .addCase(fetchMoviesByGenre.rejected, (state): void => {
         state.isLoading = false;

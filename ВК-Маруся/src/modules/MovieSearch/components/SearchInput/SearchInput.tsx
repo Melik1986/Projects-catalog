@@ -35,10 +35,10 @@ const SearchInputComponent: React.FC<SearchInputProps> = React.memo(
     }, [debouncedQuery, searchMovies, clearResults]);
 
     React.useEffect(() => {
-      if (movies.length > 0 && debouncedQuery.trim()) {
+      if (movies && Array.isArray(movies) && movies.length > 0 && debouncedQuery.trim()) {
         setShouldShowDropdown(true);
       }
-    }, [movies.length, debouncedQuery, setShouldShowDropdown]);
+    }, [movies, debouncedQuery, setShouldShowDropdown]);
 
     const handleChange = useCallback(
       (e: React.ChangeEvent<HTMLInputElement>): void => {
@@ -82,10 +82,10 @@ const SearchInputComponent: React.FC<SearchInputProps> = React.memo(
     );
 
     const handleFocus = useCallback((): void => {
-      if (query && movies.length > 0) {
+      if (query && movies && Array.isArray(movies) && movies.length > 0) {
         setShouldShowDropdown(true);
       }
-    }, [query, movies.length, setShouldShowDropdown]);
+    }, [query, movies, setShouldShowDropdown]);
 
     return (
       <div className={`${styles.search} ${className || ''}`} data-mobile-search>
