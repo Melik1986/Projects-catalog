@@ -7,11 +7,11 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --config vite-no-pwa.config.ts",
     "build:prod": "vite build --mode production",
     "build:analyze": "vite build && echo Bundle analysis available at dist/stats.html",
     "build:vercel": "NODE_ENV=production vite build",
-    "build:no-pwa": "NODE_ENV=production vite build --config vite-no-pwa.config.ts",
+    "build:no-pwa": "vite build --config vite-no-pwa.config.ts",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,scss,css,md}\"",

@@ -49,18 +49,18 @@ npm run build:no-pwa
 ```
 
 ### 6. Production Runtime Errors
-**Проблема**: `Uncaught SyntaxError: Unexpected token '<'` и `Cannot access 'M' before initialization`
+**Проблема**: Страница пустая, только `<body>` без контента
 
 **Решение**:
-- Исправлена конфигурация `vercel.json` с правильными headers для assets
-- Устранены циклические зависимости в Redux слайсах
-- Добавлен `base: '/'` в `vite.config.ts`
-- Изменены импорты `RootState` с `@/shared/lib/store` на `@/app/store`
+- Упрощена конфигурация `vercel.json` до минимума
+- Изменена команда сборки по умолчанию на `build:no-pwa`
+- Убраны preload ссылки на `/src/` из `index.html`
+- Упрощена конфигурация `vite-no-pwa.config.ts`
 
 **Корневая причина**:
-- Циклическая зависимость: слайсы → shared/lib/store → app/store → слайсы
-- Vercel неправильно обслуживал статические файлы
-- CSS файлы не загружались из-за неправильных путей
+- Vercel не мог правильно обработать сложную конфигурацию
+- PWA плагин вызывал проблемы с путями
+- Preload ссылки указывали на несуществующие файлы в продакшне
 
 ### 7. Build Warnings (Non-Critical)
 
