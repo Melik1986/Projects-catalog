@@ -1,0 +1,46 @@
+# Development files
+node_modules
+src
+docs
+__tests__
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Build artifacts that shouldn't be deployed
+dev-dist
+tsconfig.tsbuildinfo
+*.log
+
+# Development configs
+babel.config.js
+jest.config.js
+eslint.config.js
+.prettierrc
+.editorconfig
+
+# Git files
+.git
+.gitignore
+.gitkeep
+
+# IDE files
+.DS_Store
+.vscode
+.idea
+
+# Environment files (should be set in Vercel dashboard)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# TypeScript config (not needed for production)
+tsconfig.json

@@ -10,6 +10,7 @@
     "build": "vite build",
     "build:prod": "vite build --mode production",
     "build:analyze": "vite build && echo Bundle analysis available at dist/stats.html",
+    "build:vercel": "NODE_ENV=production vite build",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,scss,css,md}\"",

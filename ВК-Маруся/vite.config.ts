@@ -24,16 +24,16 @@ export default defineConfig({
     minify: 'terser',
     terserOptions: {
       compress: {
-        drop_console: true,
-        drop_debugger: true,
-        pure_funcs: ['console.log', 'console.info', 'console.debug', 'console.warn'],
-        passes: 3,
-        unsafe: true,
-        unsafe_comps: true,
-        unsafe_math: true,
+        drop_console: process.env.NODE_ENV === 'production',
+        drop_debugger: process.env.NODE_ENV === 'production',
+        pure_funcs: process.env.NODE_ENV === 'production' ? ['console.log', 'console.info', 'console.debug', 'console.warn'] : [],
+        passes: 2,
+        unsafe: false,
+        unsafe_comps: false,
+        unsafe_math: false,
       },
       mangle: {
-        toplevel: true,
+        toplevel: false,
         safari10: true,
       },
       format: {
@@ -166,20 +166,20 @@ export default defineConfig({
       registerType: 'autoUpdate',
       manifestFilename: 'manifest.webmanifest',
       useCredentials: false,
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png'],
       injectManifest: {
-        globPatterns: ['**/*.{js,css,html,ico,png,webp}'], // Убираем svg из автокэша
-        globIgnores: ['**/sprite.svg'], // Исключаем большой sprite файл
-        maximumFileSizeToCacheInBytes: 2 * 1024 * 1024, // Снижаем лимит до 2MB
+        globPatterns: ['**/*.{js,css,html,ico,png,webp}'],
+        globIgnores: ['**/sprite.svg', '**/stats.html', '**/*.gz', '**/*.br'],
+        maximumFileSizeToCacheInBytes: 1.5 * 1024 * 1024, // Снижаем лимит до 1.5MB
       },
       devOptions: {
         enabled: true,
         type: 'module',
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,webp}'], // Убираем svg из автокэша  
-        globIgnores: ['**/sprite.svg'], // Исключаем большой sprite файл
-        maximumFileSizeToCacheInBytes: 2 * 1024 * 1024, // Снижаем лимит до 2MB
+        globPatterns: ['**/*.{js,css,html,ico,png,webp}'],
+        globIgnores: ['**/sprite.svg', '**/stats.html', '**/*.gz', '**/*.br'],
+        maximumFileSizeToCacheInBytes: 1.5 * 1024 * 1024, // Снижаем лимит до 1.5MB
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/cinemaguide\.skillbox\.cc\/.*\.(jpg|jpeg|png|webp)$/,
