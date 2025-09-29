@@ -1,6 +1,5 @@
 # Development files
 node_modules
-src
 docs
 __tests__
 *.test.ts
@@ -37,10 +36,9 @@ eslint.config.js
 .env.test.local
 .env.production.local
 
-# Package manager files
-package-lock.json
+# Package manager files (keep package-lock.json for consistent builds)
 yarn.lock
 pnpm-lock.yaml
 
-# TypeScript config (not needed for production)
-tsconfig.json
+# Keep TypeScript config for build process
+# tsconfig.json

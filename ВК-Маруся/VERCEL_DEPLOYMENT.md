@@ -18,14 +18,22 @@
 - Оставлена только конфигурация `builds` для статической сборки
 - Проект использует только фронтенд без API функций
 
-**Альтернативная конфигурация**:
-Если основная конфигурация не работает, используйте `vercel-minimal.json`:
-```bash
-# Переименуйте файл
-mv vercel-minimal.json vercel.json
-```
+### 3. Source Code Missing Error
+**Проблема**: `Failed to resolve /src/main.tsx from /vercel/path0/ВК-Маруся/index.html`
 
-### 3. Build Optimization
+**Решение**:
+- Исправлен `.vercelignore` - убрана строка `src`
+- Vercel нужен исходный код для сборки
+- Оставлены только тестовые файлы и dev-конфигурации в ignore
+
+### 4. PWA Glob Patterns Warning
+**Проблема**: `One of the glob patterns doesn't match any files`
+
+**Решение**:
+- Добавлены `sw.js` и `workbox-*.js` в `globIgnores`
+- Это предотвращает попытки кэшировать Service Worker файлы
+
+### 5. Build Optimization
 
 **Текущие настройки**:
 - Terser minification с безопасными опциями

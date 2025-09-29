@@ -169,7 +169,7 @@ export default defineConfig({
       includeAssets: ['favicon.ico', 'apple-touch-icon.png'],
       injectManifest: {
         globPatterns: ['**/*.{js,css,html,ico,png,webp}'],
-        globIgnores: ['**/sprite.svg', '**/stats.html', '**/*.gz', '**/*.br'],
+        globIgnores: ['**/sprite.svg', '**/stats.html', '**/*.gz', '**/*.br', 'sw.js', 'workbox-*.js'],
         maximumFileSizeToCacheInBytes: 1.5 * 1024 * 1024, // Снижаем лимит до 1.5MB
       },
       devOptions: {
@@ -178,7 +178,7 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,webp}'],
-        globIgnores: ['**/sprite.svg', '**/stats.html', '**/*.gz', '**/*.br'],
+        globIgnores: ['**/sprite.svg', '**/stats.html', '**/*.gz', '**/*.br', 'sw.js', 'workbox-*.js'],
         maximumFileSizeToCacheInBytes: 1.5 * 1024 * 1024, // Снижаем лимит до 1.5MB
         runtimeCaching: [
           {
