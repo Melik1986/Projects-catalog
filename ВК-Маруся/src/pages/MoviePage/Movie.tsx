@@ -50,7 +50,7 @@ const Movie: React.FC = () => {
       <SEO
         title={`${movie.title} (${movie.releaseYear}) | ВК Маруся`}
         description={movie.plot || `Смотрите фильм ${movie.title} на ВК Маруся`}
-        keywords={`${movie.title}, ${movie.genres?.join(', ')}, фильм, кино, трейлер`}
+        keywords={`${movie.title}, ${Array.isArray(movie.genres) ? movie.genres.join(', ') : 'фильм'}, фильм, кино, трейлер`}
       />
       <main className={styles['movie-page']}>
         <Hero
@@ -59,7 +59,7 @@ const Movie: React.FC = () => {
             subtitle: movie.plot,
             tmdbRating: movie.tmdbRating,
             releaseYear: movie.releaseYear,
-            genre: movie.genres?.join(', ') || 'Не указан',
+            genre: Array.isArray(movie.genres) ? movie.genres.join(', ') : 'Не указан',
             duration: `${movie.runtime || 120} мин`,
             posterUrl: movie.posterUrl,
           }}

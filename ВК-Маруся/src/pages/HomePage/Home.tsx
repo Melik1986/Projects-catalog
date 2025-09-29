@@ -65,7 +65,7 @@ const Home: React.FC = () => {
               subtitle: randomMovie.plot,
               tmdbRating: randomMovie.tmdbRating,
               releaseYear: randomMovie.releaseYear,
-              genre: randomMovie.genres?.join(', ') || 'Не указан',
+              genre: Array.isArray(randomMovie.genres) ? randomMovie.genres.join(', ') : 'Не указан',
               duration: `${randomMovie.runtime || 120} мин`,
               posterUrl: randomMovie.posterUrl,
             }}

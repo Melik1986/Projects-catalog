@@ -31,7 +31,7 @@ export const MovieInfo: React.FC<MovieInfoProps> = ({ movie }) => {
           {cast && Array.isArray(cast) && cast.length > 0 && (
             <li className={styles['movie-info__detail']}>
               <span className={styles['movie-info__label']}>В ролях:</span>
-              <span className={styles['movie-info__value']}>{cast.join(', ')}</span>
+              <span className={styles['movie-info__value']}>{Array.isArray(cast) ? cast.join(', ') : cast}</span>
             </li>
           )}
 
@@ -40,7 +40,7 @@ export const MovieInfo: React.FC<MovieInfoProps> = ({ movie }) => {
             countriesOfOrigin.length > 0 && (
               <li className={styles['movie-info__detail']}>
                 <span className={styles['movie-info__label']}>Страна:</span>
-                <span className={styles['movie-info__value']}>{countriesOfOrigin.join(', ')}</span>
+                <span className={styles['movie-info__value']}>{Array.isArray(countriesOfOrigin) ? countriesOfOrigin.join(', ') : countriesOfOrigin}</span>
               </li>
             )}
 
