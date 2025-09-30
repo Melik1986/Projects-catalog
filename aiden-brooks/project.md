@@ -1,5 +1,9 @@
 # Frontend Codebase Analysis: aiden-brooks
 
+## 🌐 Live Preview
+- **Live Demo**: [https://my-project-aiden-brooks.vercel.app/](https://my-project-aiden-brooks.vercel.app/)
+- **Deployment**: Vercel (React SPA optimized)
+
 ## 🖼 Project Showcase
 - **Type**: Portfolio site with animated page transitions.
 - **Core user scenarios**:

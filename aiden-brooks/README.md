@@ -16,6 +16,12 @@
 
   <h3 align="center">Aiden Brooks — Design & Art Direction Portfolio</h3>
   <p align="center">A fast, minimal, motion‑driven portfolio built with React + Vite.</p>
+  
+  <p align="center">
+    <a href="https://my-project-aiden-brooks.vercel.app/" target="_blank">
+      <img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
+    </a>
+  </p>
 </div>
 
 ## Table of Contents

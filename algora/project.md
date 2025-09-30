@@ -1,5 +1,9 @@
 # Frontend Codebase Analysis: algora
 
+## 🌐 Live Preview
+- **Live Demo**: [https://my-projectalgora.vercel.app/](https://my-projectalgora.vercel.app/)
+- **Deployment**: Vercel (Next.js optimized)
+
 ## 🖼 Project Showcase
 - **Type**: Creative portfolio/landing with immersive scroll-driven storytelling.
 - **Core user scenarios**:

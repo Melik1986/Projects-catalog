@@ -1,5 +1,9 @@
 # Frontend Codebase Analysis: CG Karim Saab Scroll Animation
 
+## 🌐 Live Preview
+- **Live Demo**: [https://my-projects-gcg-karim.vercel.app/](https://my-projects-gcg-karim.vercel.app/)
+- **Deployment**: Vercel (Static site optimized)
+
 ## 📸 Project Gallery
 
 <div align="center">

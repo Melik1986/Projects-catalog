@@ -16,6 +16,12 @@
 
   <h3 align="center">Algora — The Fusion of Art and Algorithms</h3>
   <p align="center">A motion‑driven Next.js site with cinematic visuals, smooth scroll, and editorial storytelling.</p>
+  
+  <p align="center">
+    <a href="https://my-projectalgora.vercel.app/" target="_blank">
+      <img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
+    </a>
+  </p>
 </div>
 
 ## Table of Contents
