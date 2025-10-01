@@ -1,7 +1,7 @@
 {
   "builds": [
     {
-      "src": "client/package.json",
+      "src": "project_threejs_ai-3D/client/package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "dist"
@@ -11,7 +11,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/client/$1"
+      "dest": "/project_threejs_ai-3D/client/$1"
     }
   ]
 }
