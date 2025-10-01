@@ -19,8 +19,8 @@
 #### Вариант A: Через Vercel Dashboard
 1. Зайдите на [vercel.com](https://vercel.com)
 2. Нажмите "New Project"
-3. Импортируйте ваш GitHub репозиторий
-4. **Важно**: Установите Root Directory как `client`
+3. Импортируйте ваш GitHub репозиторий `Melik1986/Projects-catalog`
+4. **Важно**: Установите Root Directory как `project_threejs_ai-3D/client`
 5. Настройки сборки:
    - **Build Command**: `npm run build`
    - **Output Directory**: `dist`
@@ -33,13 +33,16 @@
 npm i -g vercel
 
 # Перейдите в папку клиента
-cd client
+cd project_threejs_ai-3D/client
 
 # Разверните
 vercel
 
 # Следуйте инструкциям CLI
 ```
+
+#### Вариант C: Использовать vercel.json (уже создан)
+Файл `vercel.json` уже создан в корне проекта и настроен для автоматического развертывания клиента.
 
 ### 2. Развертывание сервера
 
@@ -76,15 +79,17 @@ vercel
    ```
 6. Railway автоматически определит Node.js и развернет
 
-**На Render**
-1. Зайдите на [render.com](https://render.com)
-2. Создайте новый "Web Service"
-3. Подключите GitHub репозиторий `Projects-catalog`
-4. Настройки:
+**На Render (Текущий способ)**
+1. Зайдите в настройки вашего существующего сервиса на Render
+2. Измените настройки:
    - **Root Directory**: `project_threejs_ai-3D/threejs-ai-server`
    - **Build Command**: `npm install`
    - **Start Command**: `npm start`
-5. Добавьте переменные окружения
+3. Добавьте переменные окружения:
+   ```
+   OPENAI_API_KEY=your_openai_api_key_here
+   ```
+4. Сохраните изменения и перезапустите развертывание
 
 ### 3. Обновление конфигурации
 
@@ -96,10 +101,12 @@ const config = {
     backendUrl: "http://localhost:8080/api/v1/dalle",
   },
   production: {
-    backendUrl: "https://your-server-url.com/api/v1/dalle", // ← Замените на ваш URL
+    backendUrl: "https://threejs-ai-server.onrender.com/api/v1/dalle", // ← Обновлено
   },
 };
 ```
+
+✅ **Сервер развернут**: https://threejs-ai-server.onrender.com
 
 ### 4. Пересборка клиента
 После обновления конфигурации пересоберите клиент на Vercel.
