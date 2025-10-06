@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { Hero } from '@/shared/ui';
+import { Hero } from '@/shared/ui/Hero/Hero';
 import { LoadingSpinner, ErrorDisplay } from '@/shared/ui';
 import SEO from '@/shared/ui/SEO/SEO';
 import { Modal } from '@/shared/ui';

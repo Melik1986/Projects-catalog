@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useHomeData } from '@/pages/HomePage/hooks/useHomeData';
 import { useHomeActions } from '@/pages/HomePage/hooks/useHomeActions';
 import { useModal } from '@/shared/lib/hooks/useModal';
-import { Hero } from '@/shared/ui';
+import { Hero } from '@/shared/ui/Hero/Hero';
 import { MovieGrid } from '@/modules/MovieCatalog';
 import { Modal } from '@/shared/ui';
 import SEO from '@/shared/ui/SEO/SEO';

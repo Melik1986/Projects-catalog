@@ -7,9 +7,7 @@ import modalStyles from '@/shared/ui/Modal/Modal.module.scss';
 // Lazy loading для YouTube компонента - загружается только при открытии трейлера
 const YouTubePlayer = React.lazy(() =>
   import('react-youtube').then((module) => ({
-    default: ({ videoId, opts }: { videoId: string; opts: any }) => (
-      <module.default videoId={videoId} opts={opts} />
-    ),
+    default: module.default,
   })),
 );
 
