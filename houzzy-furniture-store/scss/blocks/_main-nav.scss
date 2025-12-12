@@ -1,0 +1,30 @@
+.main-nav {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	@include vp-1023 {
+		display: none;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 10px 51px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		@media (max-width: 1280px) {
+			gap: 10px 30px;
+		}
+	}
+
+	&__link {
+		&:hover,
+		&:focus-visible {
+			color: $color-cloudy;
+		}
+	}
+}

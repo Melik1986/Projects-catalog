@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Product Catalog - Houzzy</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <a class="header__logo-link" href="index.html" aria-label="Link to homepage">
+          <svg class="header__logo-icon" width="110" height="40" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#logo-houzzy"></use>
+          </svg>
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Catalog</a>
+            </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Promotions</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Reviews</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Delivery</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Payment</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Events</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__user-list">
+          <a class="header__user-link" href="#" aria-label="Link to search">
+            <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-search"></use>
+            </svg>
+          </a>
+          <a class="header__user-link" href="#" aria-label="Link to Favorites">
+            <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-heart"></use>
+            </svg>
+          </a>
+          <a class="header__user-link" href="#" aria-label="Link to Cart">
+            <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-bag"></use>
+            </svg>
+          </a>
+          <a class="header__user-link" href="tel:88000000000" aria-label="Link to phone number">
+            <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-phone"></use>
+            </svg>
+          </a>
+        </div>
+        <button class="header__burger" type="button" aria-label="Open mobile menu">
+          <svg class="header__burger-icon" width="32" height="32" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="breadcrumbs">
+      <div class="container">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html" aria-label="Link to home">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#" aria-label="Link to catalog">Catalog</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#" aria-label="Link to Upholstered Furniture">Upholstered Furniture</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#" aria-label="Link to armchairs">Armchairs</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <!-- каталог товаров -->
+    <section class="catalog">
+      <div class="container">
+        <h1 class="catalog__title">Armchairs</h1>
+        <div class="catalog__content">
+          <button class="catalog__filter-options" type="button" aria-label="Open filter">
+            <svg class="catalog__filter-icon" width="24" height="24" aria-hidden="true"
+              aria-label="Кнопка открытия фильтра">
+              <use xlink:href="images/sprite.svg#icon-options"></use>
+            </svg>
+          </button>
+          <div class="catalog__filter">
+            <ul class="catalog__filter-block">
+              <li class="catalog__filter-item">
+                <button class="catalog__filter-btn" type="button" aria-label="Filter button">Upholstered armchairs</button>
+              </li>
+              <li class="catalog__filter-item">
+                <button class="catalog__filter-btn" type="button" aria-label="Filter button">Designer armchairs</button>
+              </li>
+              <li class="catalog__filter-item">
+                <button class="catalog__filter-btn" type="button" aria-label="Filter button">Backless chairs</button>
+              </li>
+            </ul>
+            <div class="catalog__filter-block catalog__filter-block--sort">
+              <h2 class="catalog__filter-title">Sort:</h2>
+              <ul class="catalog__filter-list">
+                <li class="catalog__filter-item">
+                  <a class="catalog__filter-link" href="#" aria-label="Link">Popular</a>
+                </li>
+                <li class="catalog__filter-item">
+                  <a class="catalog__filter-link" href="#" aria-label="Link">Price: Low to High
+                    <svg class="sort-icon" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-arrow-top"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="catalog__filter-item">
+                  <a class="catalog__filter-link" href="#" aria-label="Link">Price: High to Low
+                    <svg class="sort-icon" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-arrow-bottom"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Карточки товаров -->
+          <div class="products">
+            <ul class="products__list">
+              <li class="products__item">
+                <div class="product-card">
+                  <a class="product-card__link-img" href="#" aria-label="Link to product card">
+                    <span class="product-card__discount">-20%</span>
+                    <picture class="product-card__picture">
+                      <source media="(max-width: 768px)"
+                        srcset="images/catalog/nort-cozy-mobile.png 1x, images/catalog/nort-cozy-mobile@2x.png 2x">
+                      <source media="(max-width: 1024px)"
+                        srcset="images/catalog/nort-cozy-tablet.png 1x, images/catalog/nort-cozy-tablet@2x.png 2x">
+                      <img class="product-card__img" src="images/catalog/nort-cozy-desktop.png"
+                        srcset="images/catalog/nort-cozy-desktop@2x.png 2x" width="320" height="400" alt="Armchair">
+                    </picture>
+                    <span class="product-card__details">Details</span>
+                  </a>
+                  <div class="product-card__info">
+                    <div class="product-card__brand">
+                      <span class="product-card__brand-name">
+                        <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-brand"></use>
+                        </svg>
+                      </span>
+                      <ul class="product-card__circles-list">
+                        <li class="product-card__circle-item">
+                          <a class="product-card__circle-link product-card__circle-link--pink" href="#"
+                            aria-label="Link"></a>
+                        </li>
+                        <li class="product-card__circle-item">
+                          <a class="product-card__circle-link product-card__circle-link--woodland" href="#"
+                            aria-label="Link"></a>
+                        </li>
+                        <li class="product-card__circle-item">
+                          <a class="product-card__circle-link product-card__circle-link--submarine" href="#"
+                            aria-label="Link"></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="product-card__category">Upholstered Furniture</p>
+                    <a class="product-card__title" href="#" aria-label="Link">Armchair Nort Cozy</a>
+                    <div class="product-card__price">
+                      <span class="product-card__price-current">4&nbsp;480&nbsp;USD</span>
+                      <span class="product-card__price-old">5&nbsp;600&nbsp;USD</span>
+                    </div>
+                    <div class="product-card__favorite">
+                      <button class="btn" type="button" aria-label="Add to cart">Add to cart</button>
+                      <button class="btn btn--like" type="button" aria-label="Add to favorites">
+                        <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-heart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product-card">
+                  <a class="product-card__link-img" href="#" aria-label="Link to product card">
+                    <span class="product-card__discount">-20%</span>
+                    <picture class="product-card__picture">
+                      <source media="(max-width: 768px)"
+                        srcset="images/catalog/pikont-mobile.png 1x, images/catalog/pikont-mobile@2x.png 2x">
+                      <source media="(max-width: 1024px)"
+                        srcset="images/catalog/pikont-tablet.png 1x, images/catalog/pikont-tablet@2x.png 2x">
+                      <img class="product-card__img" src="images/catalog/pikont-desktop.png"
+                        srcset="images/catalog/pikont-desktop@2x.png 2x" width="320" height="400" alt="Armchair">
+                    </picture>
+                    <span class="product-card__details">Details</span>
+                  </a>
+                  <div class="product-card__info">
+                    <div class="product-card__brand">
+                      <span class="product-card__brand-name">
+                        <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-brand"></use>
+                        </svg>
+                      </span>
+                      <ul class="product-card__circles-list">
+                        <li class="product-card__circle-item">
+                          <a class="product-card__circle-link product-card__circle-link--woodland" href="#"
+                            aria-label="Link"></a>
+                        </li>
+                        <li class="product-card__circle-item">
+                          <a class="product-card__circle-link product-card__circle-link--sambuca" href="#"
+                            aria-label="Link"></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="product-card__category">Upholstered Furniture</p>
+                    <a class="product-card__title" href="#" aria-label="Link">Armchair Pikont</a>
+                    <div class="product-card__price">
+                      <span class="product-card__price-current">5&nbsp;360&nbsp;USD</span>
+                      <span class="product-card__price-old">7&nbsp;600&nbsp;USD</span>
+                    </div>
+                    <div class="product-card__favorite">
+                      <button class="btn" type="button" aria-label="Add to cart">Add to cart</button>
+                      <button class="btn btn--like" type="button" aria-label="Add to favorites">
+                        <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-heart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product-card">
+                  <a class="product-card__link-img" href="#" aria-label="Link to product card">
+                    <picture class="product-card__picture">
+                      <source media="(max-width: 768px)"
+                        srcset="images/catalog/heavy-suite-mobile.png 1x, images/catalog/heavy-suite-mobile@2x.png 2x">
+                      <source media="(max-width: 1024px)"
+                        srcset="images/catalog/heavy-suite-tablet.png 1x, images/catalog/heavy-suite-tablet@2x.png 2x">
+                      <img class="product-card__img" src="images/catalog/heavy-suite-desktop.png"
+                        srcset="images/catalog/heavy-suite-desktop@2x.png 2x" width="320" height="400" alt="Armchair">
+                    </picture>
+                    <span class="product-card__details">Details</span>
+                  </a>
+                  <div class="product-card__info">
+                    <div class="product-card__brand">
+                      <span class="product-card__brand-name">
+                        <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-brand"></use>
+                        </svg>
+                      </span>
+                      <ul class="product-card__circles-list">
+                        <li class="product-card__circle-item">
+                          <a class="product-card__circle-link product-card__circle-link--pink" href="#"
+                            aria-label="Ссылка"></a>
+                        </li>
+                        <li class="product-card__circle-item">
+                          <a class="product-card__circle-link product-card__circle-link--sambuca" href="#"
+                            aria-label="Ссылка"></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="product-card__category">Upholstered Furniture</p>
+                    <a class="product-card__title" href="#" aria-label="Link">Armchair Heavy Suite</a>
+                    <div class="product-card__price">
+                      <span class="product-card__price-current">9 200 USD</span>
+                    </div>
+                    <div class="product-card__favorite">
+                      <button class="btn" type="button" aria-label="Add to cart">Add to cart</button>
+                      <button class="btn btn--like" type="button" aria-label="Add to favorites">
+                        <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-heart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product-card">
+                  <a class="product-card__link-img" href="#" aria-label="Link to product card">
+                    <span class="product-card__discount">-20%</span>
+                    <picture class="product-card__picture">
+                      <source media="(max-width: 768px)"
+                        srcset="images/catalog/sea-breeze-mobile.png 1x, images/catalog/sea-breeze-mobile@2x.png 2x">
+                      <source media="(max-width: 1024px)"
+                        srcset="images/catalog/sea-breeze-tablet.png 1x, images/catalog/sea-breeze-tablet@2x.png 2x">
+                      <img class="product-card__img" src="images/catalog/sea-breeze-desktop.png"
+                        srcset="images/catalog/sea-breeze-desktop@2x.png 2x" width="320" height="400" alt="Armchair">
+                    </picture>
+                    <span class="product-card__details">Details</span>
+                  </a>
+                  <div class="product-card__info">
+                    <div class="product-card__brand">
+                      <span class="product-card__brand-name">
+                        <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-brand"></use>
+                        </svg>
+                      </span>
+                      <ul class="product-card__circles-list">
+                        <li class="product-card__circle-item">
+                          <a class="product-card__circle-link product-card__circle-link--pink" href="#"
+                            aria-label="Link"></a>
+                        </li>
+                        <li class="product-card__circle-item">
+                          <a class="product-card__circle-link product-card__circle-link--equator" href="#"
+                            aria-label="Link"></a>
+                        </li>
+                        <li class="product-card__circle-item">
+                          <a class="product-card__circle-link product-card__circle-link--sambuca" href="#"
+                            aria-label="Link"></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="product-card__category">Upholstered Furniture</p>
+                    <a class="product-card__title" href="#" aria-label="Link">Armchair Sea Breeze</a>
+                    <div class="product-card__price">
+                      <span class="product-card__price-current">3&nbsp;360&nbsp;USD</span>
+                      <span class="product-card__price-old">4&nbsp;200&nbsp;USD</span>
+                    </div>
+                    <div class="product-card__favorite">
+                      <button class="btn" type="button" aria-label="Add to cart">Add to cart</button>
+                      <button class="btn btn--like" type="button" aria-label="Add to favorites">
+                        <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-heart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product-card">
+                  <a class="product-card__link-img" href="#" aria-label="Link to product card">
+                    <span class="product-card__discount">-20%</span>
+                    <picture class="product-card__picture">
+                      <source media="(max-width: 768px)"
+                        srcset="images/catalog/mafiafamily-mobile.png 1x, images/catalog/mafiafamily-mobile@2x.png 2x">
+                      <source media="(max-width: 1024px)"
+                        srcset="images/catalog/mafiafamily-tablet.png 1x, images/catalog/mafiafamily-tablet@2x.png 2x">
+                      <img class="product-card__img" src="images/catalog/mafiafamily-desktop.png"
+                        srcset="images/catalog/mafiafamily-desktop@2x.png 2x" width="320" height="400" alt="Armchair">
+                    </picture>
+                    <span class="product-card__details">Details</span>
+                  </a>
+                  <div class="product-card__info">
+                    <div class="product-card__brand">
+                      <span class="product-card__brand-name">
+                        <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-brand"></use>
+                        </svg>
+                      </span>
+                      <ul class="product-card__circles-list">
+                        <li class="product-card__circle-item">
+                          <a class="product-card__circle-link product-card__circle-link--woodland" href="#"
+                            aria-label="Link"></a>
+                        </li>
+                        <li class="product-card__circle-item">
+                          <a class="product-card__circle-link product-card__circle-link--sambuca" href="#"
+                            aria-label="Link"></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="product-card__category">Upholstered Furniture</p>
+                    <a class="product-card__title" href="#" aria-label="Link">Armchair Mafiafamily</a>
+                    <div class="product-card__price">
+                      <span class="product-card__price-current">9&nbsp;960&nbsp;USD</span>
+                      <span class="product-card__price-old">12&nbsp;450&nbsp;USD</span>
+                    </div>
+                    <div class="product-card__favorite">
+                      <button class="btn" type="button" aria-label="Add to cart">Add to cart</button>
+                      <button class="btn btn--like" type="button" aria-label="Add to favorites">
+                        <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-heart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product-card">
+                  <a class="product-card__link-img" href="#" aria-label="Link to product card">
+                    <picture class="product-card__picture">
+                      <source media="(max-width: 768px)"
+                        srcset="images/catalog/noilfo-mobile.png 1x, images/catalog/noilfo-mobile@2x.png 2x">
+                      <source media="(max-width: 1024px)"
+                        srcset="images/catalog/noilfo-tablet.png 1x, images/catalog/noilfo-tablet@2x.png 2x">
+                      <img class="product-card__img" src="images/catalog/noilfo-desktop.png"
+                        srcset="images/catalog/noilfo-desktop@2x.png 2x" width="320" height="400" alt="Armchair">
+                    </picture>
+                    <span class="product-card__details">Details</span>
+                  </a>
+                  <div class="product-card__info">
+                    <div class="product-card__brand">
+                      <span class="product-card__brand-name">
+                        <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-brand"></use>
+                        </svg>
+                      </span>
+                      <ul class="product-card__circles-list">
+                        <li class="product-card__circle-item">
+                          <a class="product-card__circle-link product-card__circle-link--submarine" href="#"
+                            aria-label="Link"></a>
+                        </li>
+                        <li class="product-card__circle-item">
+                          <a class="product-card__circle-link product-card__circle-link--sambuca" href="#"
+                            aria-label="Link"></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="product-card__category">Upholstered Furniture</p>
+                    <a class="product-card__title" href="#" aria-label="Link">Armchair Noilfo</a>
+                    <div class="product-card__price">
+                      <span class="product-card__price-current">7 860 USD</span>
+                    </div>
+                    <div class="product-card__favorite">
+                      <button class="btn" type="button" aria-label="Add to cart">Add to cart</button>
+                      <button class="btn btn--like" type="button" aria-label="Add to favorites">
+                        <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-heart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product-card">
+                  <a class="product-card__link-img" href="#" aria-label="Link to product card">
+                    <picture class="product-card__picture">
+                      <source media="(max-width: 768px)"
+                        srcset="images/catalog/sunbot-mobile.png 1x, images/catalog/sunbot-mobile@2x.png 2x">
+                      <source media="(max-width: 1024px)"
+                        srcset="images/catalog/sunbot-tablet.png 1x, images/catalog/sunbot-tablet@2x.png 2x">
+                      <img class="product-card__img" src="images/catalog/sunbot-desktop.png"
+                        srcset="images/catalog/sunbot-desktop@2x.png 2x" width="320" height="400" alt="Armchair">
+                    </picture>
+                    <span class="product-card__details">Details</span>
+                  </a>
+                  <div class="product-card__info">
+                    <div class="product-card__brand">
+                      <span class="product-card__brand-name">
+                        <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-brand"></use>
+                        </svg>
+                      </span>
+                      <ul class="product-card__circles-list">
+                        <li class="product-card__circle-item">
+                          <a class="product-card__circle-link product-card__circle-link--equator" href="#"
+                            aria-label="Link"></a>
+                        </li>
+                        <li class="product-card__circle-item">
+                          <a class="product-card__circle-link product-card__circle-link--sambuca" href="#"
+                            aria-label="Link"></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="product-card__category">Upholstered Furniture</p>
+                    <a class="product-card__title" href="#" aria-label="Link">Armchair Sunbot</a>
+                    <div class="product-card__price">
+                      <span class="product-card__price-current">3&nbsp;880&nbsp;USD</span>
+                    </div>
+                    <div class="product-card__favorite">
+                      <button class="btn" type="button" aria-label="Add to cart">Add to cart</button>
+                      <button class="btn btn--like" type="button" aria-label="Add to favorites">
+                        <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-heart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product-card">
+                  <a class="product-card__link-img" href="#" aria-label="Link to product card">
+                    <span class="product-card__discount">-20%</span>
+                    <picture class="product-card__picture">
+                      <source media="(max-width: 768px)"
+                        srcset="images/catalog/dromsa-mobile.png 1x, images/catalog/dromsa-mobile@2x.png 2x">
+                      <source media="(max-width: 1024px)"
+                        srcset="images/catalog/dromsa-tablet.png 1x, images/catalog/dromsa-tablet@2x.png 2x">
+                      <img class="product-card__img" src="images/catalog/dromsa-desktop.png"
+                        srcset="images/catalog/dromsa-desktop@2x.png 2x" width="320" height="400" alt="Armchair">
+                    </picture>
+                    <span class="product-card__details">Details</span>
+                  </a>
+                  <div class="product-card__info">
+                    <div class="product-card__brand">
+                      <span class="product-card__brand-name">
+                        <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-brand"></use>
+                        </svg>
+                      </span>
+                      <ul class="product-card__circles-list">
+                        <li class="product-card__circle-item">
+                          <a class="product-card__circle-link product-card__circle-link--submarine" href="#"
+                            aria-label="Link"></a>
+                        </li>
+                        <li class="product-card__circle-item">
+                          <a class="product-card__circle-link product-card__circle-link--equator" href="#"
+                            aria-label="Link"></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="product-card__category">Upholstered Furniture</p>
+                    <a class="product-card__title" href="#" aria-label="Link">Armchair Dromsa</a>
+                    <div class="product-card__price">
+                      <span class="product-card__price-current">7 120 USD</span>
+                      <span class="product-card__price-old">8 900 USD</span>
+                    </div>
+                    <div class="product-card__favorite">
+                      <button class="btn" type="button" aria-label="Add to cart">Add to cart</button>
+                      <button class="btn btn--like" type="button" aria-label="Add to favorites">
+                        <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-heart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="container">
+        <div class="subscribe__wrapper">
+          <h2 class="subscribe__title">Subscribe to the newsletter and get <b>500 bonus points</b> on your first purchase
+          </h2>
+          <div class="subscribe__form-wrapper">
+            <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
+              <input class="subscribe__input" type="email" name="email" placeholder="E-mail" required>
+              <span class="subscribe__text">By subscribing to the newsletter, I agree to the Privacy Policy</span>
+                <span class="error-message visually-hidden" id="email-error">Invalid field</span>
+            </form>
+            <button class="btn btn--black" type="submit" aria-label="Subscribe">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="viewed-products">
+      <div class="container">
+        <h2 class="viewed-products__title">Recently viewed</h2>
+        <ul class="viewed-products__list">
+          <li class="viewed-products__item">
+            <div class="product-card product-card--viewed">
+              <a class="product-card__link-img" href="#" aria-label="Link to product card">
+                <span class="product-card__discount">-20%</span>
+                <picture class="product-card__picture">
+                  <source media="(max-width: 768px)"
+                    srcset="images/viewed/mandarin-mobile.png 1x, images/viewed/mandarin-mobile@2x.png 2x">
+                  <source media="(max-width: 1024px)"
+                    srcset="images/viewed/mandarin-tablet.png 1x, images/viewed/mandarin-tablet@2x.png 2x">
+                  <img class="product-card__img" src="images/viewed/mandarin-desktop.png"
+                    srcset="images/viewed/mandarin-desktop@2x.png 2x" width="220" height="280" alt="Armchair">
+                </picture>
+                <span class="product-card__details">Details</span>
+              </a>
+              <div class="product-card__info">
+                <a class="product-card__title" href="#" aria-label="Link to product card">Chair Mandarin</a>
+                <div class="product-card__price">
+                  <span class="product-card__price-current">9&nbsp;960&nbsp;USD</span>
+                  <span class="product-card__price-old">12&nbsp;450&nbsp;USD</span>
+                </div>
+                <div class="product-card__favorite">
+                  <button class="btn btn--viewed" type="button" aria-label="Add to cart">Add to cart</button>
+                  <button class="btn btn--like" type="button" aria-label="Add to favorites">
+                    <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-products__item">
+            <div class="product-card product-card--viewed">
+              <a class="product-card__link-img" href="#" aria-label="Link to product card">
+                <picture class="product-card__picture">
+                  <source media="(max-width: 768px)"
+                    srcset="images/viewed/womromo-mobile.png 1x, images/viewed/womromo-mobile@2x.png 2x">
+                  <source media="(max-width: 1024px)"
+                    srcset="images/viewed/womromo-tablet.png 1x, images/viewed/womromo-tablet@2x.png 2x">
+                  <img class="product-card__img" src="images/viewed/womromo-desktop.png"
+                    srcset="images/viewed/womromo-desktop@2x.png 2x" width="220" height="280" alt="Armchair">
+                </picture>
+                <span class="product-card__details">Details</span>
+              </a>
+              <div class="product-card__info">
+                <a class="product-card__title" href="#" aria-label="Link to product card">Floor lamp Womromo</a>
+                <div class="product-card__price">
+                  <span class="product-card__price-current">2&nbsp;450&nbsp;USD</span>
+                </div>
+                <div class="product-card__favorite">
+                  <button class="btn btn--viewed" type="button" aria-label="Add to cart">Add to cart</button>
+                  <button class="btn btn--like" type="button" aria-label="Add to favorites">
+                    <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-products__item">
+            <div class="product-card product-card--viewed">
+              <a class="product-card__link-img" href="#" aria-label="Link to product card">
+                <picture class="product-card__picture">
+                  <source media="(max-width: 768px)"
+                    srcset="images/viewed/olimpia-mobile.png 1x, images/viewed/olimpia-mobile@2x.png 2x">
+                  <source media="(max-width: 1024px)"
+                    srcset="images/viewed/olimpia-tablet.png 1x, images/viewed/olimpia-tablet@2x.png 2x">
+                  <img class="product-card__img" src="images/viewed/olimpia-desktop.png"
+                    srcset="images/viewed/olimpia-desktop@2x.png 2x" width="220" height="280" alt="Armchair">
+                </picture>
+                <span class="product-card__details">Details</span>
+              </a>
+              <div class="product-card__info">
+                <a class="product-card__title" href="#" aria-label="Link to product card">Chair Olimpia</a>
+                <div class="product-card__price">
+                  <span class="product-card__price-current">4 890 USD</span>
+                </div>
+                <div class="product-card__favorite">
+                  <button class="btn btn--viewed" type="button" aria-label="Add to cart">Add to cart</button>
+                  <button class="btn btn--like" type="button" aria-label="Add to favorites">
+                    <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-products__item">
+            <div class="product-card product-card--viewed">
+              <a class="product-card__link-img" href="#" aria-label="Link to product card">
+                <picture class="product-card__picture">
+                  <source media="(max-width: 768px)"
+                    srcset="images/viewed/turefa-mobile.png 1x, images/viewed/turefa-mobile@2x.png 2x">
+                  <source media="(max-width: 1024px)"
+                    srcset="images/viewed/turefa-tablet.png 1x, images/viewed/turefa-tablet@2x.png 2x">
+                  <img class="product-card__img" src="images/viewed/turefa-desktop.png"
+                    srcset="images/viewed/turefa-desktop@2x.png 2x" width="220" height="280" alt="Armchair">
+                </picture>
+                <span class="product-card__details">Details</span>
+              </a>
+              <div class="product-card__info">
+                <a class="product-card__title" href="#" aria-label="Link to product card">Glass vase Turefa</a>
+                <div class="product-card__price">
+                  <span class="product-card__price-current">2&nbsp;368&nbsp;USD</span>
+                </div>
+                <div class="product-card__favorite">
+                  <button class="btn btn--viewed" type="button" aria-label="Add to cart">Add to cart</button>
+                  <button class="btn btn--like" type="button" aria-label="Add to favorites">
+                    <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-products__item">
+            <div class="product-card product-card--viewed">
+              <a class="product-card__link-img" href="#" aria-label="Link to product card">
+                <span class="product-card__discount">-20%</span>
+                <picture class="product-card__picture">
+                  <source media="(max-width: 768px)"
+                    srcset="images/viewed/agnesia-mobile.png 1x, images/viewed/agnesia-mobile@2x.png 2x">
+                  <source media="(max-width: 1024px)"
+                    srcset="images/viewed/agnesia-tablet.png 1x, images/viewed/agnesia-tablet@2x.png 2x">
+                  <img class="product-card__img" src="images/viewed/agnesia-desktop.png"
+                    srcset="images/viewed/agnesia-desktop@2x.png 2x" width="220" height="280" alt="Armchair">
+                </picture>
+                <span class="product-card__details">Details</span>
+              </a>
+              <div class="product-card__info">
+                <a class="product-card__title" href="#" aria-label="Link to product card">Chair Mandarin</a>
+                <div class="product-card__price">
+                  <span class="product-card__price-current">7&nbsp;120&nbsp;USD</span>
+                  <span class="product-card__price-old">8&nbsp;900&nbsp;USD</span>
+                </div>
+                <div class="product-card__favorite">
+                  <button class="btn btn--viewed" type="button" aria-label="Add to cart">Add to cart</button>
+                  <button class="btn btn--like" type="button" aria-label="Add to favorites">
+                    <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-products__item">
+            <div class="product-card product-card--viewed">
+              <a class="product-card__link-img" href="#" aria-label="Link to product card">
+                <picture class="product-card__picture">
+                  <source media="(max-width: 768px)"
+                    srcset="images/viewed/agisa-mobile.png 1x, images/viewed/agisa-mobile@2x.png 2x">
+                  <source media="(max-width: 1024px)"
+                    srcset="images/viewed/agisa-tablet.png 1x, images/viewed/agisa-tablet@2x.png 2x">
+                  <img class="product-card__img" src="images/viewed/agisa-desktop.png"
+                    srcset="images/viewed/agisa-desktop@2x.png 2x" width="220" height="280" alt="Armchair">
+                </picture>
+                <span class="product-card__details">Details</span>
+              </a>
+              <div class="product-card__info">
+                <a class="product-card__title" href="#" aria-label="Link to product card">Ceramic vase Agisa</a>
+                <div class="product-card__price">
+                  <span class="product-card__price-current">1 800 USD</span>
+                </div>
+                <div class="product-card__favorite">
+                  <button class="btn btn--viewed" type="button" aria-label="Add to cart">Add to cart</button>
+                  <button class="btn btn--like" type="button" aria-label="Add to favorites">
+                    <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content-block">
+        <div class="footer__nav-block">
+          <div class="footer__nav">
+          <p class="footer__title">For customers</p>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">How to place an order</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Delivery</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Payment</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="index.html">Catalog</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Collections</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Reviews</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav">
+            <p class="footer__title">About Houzzy</p>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">About the company</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Cooperation</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Vacancies</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Events</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Contacts</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Company details</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <p class="footer__title">Contact information</p>
+          <div class="footer__address">
+            <span class="footer__text">Krasnoyarsk, Dekabristov St. 19a</span>
+            <a class="footer__link" href="tel:88000000000">8 (800) 000-00-00</a>
+          </div>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Ссылка на Whatsapp">
+                <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-wa"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Link to Telegram">
+                <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-tg"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Link to VK">
+                <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Link to YouTube">
+                <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-yt"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__legal-block">
+        <div class="footer__legal-inner">
+          <a class="footer__legal-link" href="#">User Agreement and&nbsp;Terms</a>
+          <p class="footer__legal-text">&copy;&nbsp;Houzzy, 2024. Information on&nbsp;the website is not&nbsp;an offer
+            and&nbsp;is for informational purposes</p>
+          <a class="footer__legal-link" href="#">Personal data processing</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
